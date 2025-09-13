@@ -1,151 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  margin-bottom: 20px;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-
-/* Create three equal columns that float next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* Single column for the 4th card */
-.column-single {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive design */
-@media screen and (max-width: 600px) {
-  .column, .column-single {
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<h1 style="text-align:center">INSENEERIA VALIKKURSUSED</h1>
-
-<!-- First row with 3 cards -->
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="tart.png" style="width:100%">
-      <div class="card-body">
-        <h5 class="card-title">TARK TÖÖSTUS</h5>
-        <p class="card-text">Tutvumine kaasaegsete tootmistehnoloogiate ja digitaalse tööstusega.</p>
-        <p><a class="link-opacity-100" href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link">ESITLUS</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="ands.png" style="width:100%">
-      <div class="card-body">
-        <h5 class="card-title">ANDMEKOGUR-SATELIIT</h5>
-        <p class="card-text">Siin saab lisada teise kursuse kirjelduse ja detailid.</p>
-        <p><a class="link-opacity-100" href="https://drive.google.com/file/d/1WC8b4NTviv8rPoZ0HE7mQlWkoC4wG5Qy/view?usp=share_link">ESITLUS</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="auts.png" style="width:100%">
-      <div class="card-body">
-        <h5 class="card-title">AUTONOOMNE SÕIDUK</h5>
-        <p class="card-text">Siin saab lisada kolmanda kursuse kirjelduse ja detailid.</p>
-        <p><a class="link-opacity-100" href="https://drive.google.com/file/d/1-AtPhZdG9D6mwH7qYwqzEGZwf10b7OFC/view?usp=share_link">ESITLUS</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Second row with 1 card (Lauri Soosaar) -->
-<div class="row">
-  <div class="column-single">
-    <div class="card">
-      <img src="https://static.wixstatic.com/media/a7f28e_f7e3f445307f430f9781c4695dd28d42~mv2_d_4000_6000_s_4_2.jpg/v1/fill/w_540,h_540,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a7f28e_f7e3f445307f430f9781c4695dd28d42~mv2_d_4000_6000_s_4_2.jpg" alt="Lauri Soosaar" style="width:100%">
-      <h1>Lauri Soosaar</h1>
-      <p class="title">CEO & Founder</p>
-      <p>Merkuur Ltd</p>
-      <div style="margin: 24px 0;">
-        <a href="https://laurisoosaar.wixsite.com/mysite"><i class="fa fa-dribbble"></i></a> 
-        <a href="https://www.youtube.com/@laurisoosaar"><i class="fa fa-youtube"></i></a>  
-        <a href="https://www.facebook.com/lauri.soosaar"><i class="fa fa-facebook"></i></a> 
-        <a href="tel:+3725185404"><i style="font-size:24px" class="fa">&#xf095;</i></a> 
-      </div>
-      <p><a href="mailto:laurisoosaar@gmail.com">Send email</a></p>
-    </div>
-  </div>
-</div>
-
-
-
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSA Google Calendar</title>
+    <title>INSA - Inseneeria Valikkursused</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Card Styles */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-text {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        /* Links and Buttons */
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #1a73e8;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        /* Layout Styles */
+        .main-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .column-single {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Profile Card Special Styles */
+        .profile-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .profile-card h1 {
+            margin: 15px 0 10px 0;
+            font-size: 24px;
+        }
+
+        .profile-card .title {
+            color: #ddd;
+        }
+
+        .social-icons {
+            margin: 24px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Calendar Styles */
         .insa-calendar-container {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 40px auto;
             background: white;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             overflow: hidden;
-            font-family: 'Arial', sans-serif;
         }
 
         .insa-calendar-header {
@@ -200,7 +213,7 @@ button:hover, a:hover {
 
         .calendar-embed {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
         }
@@ -212,6 +225,42 @@ button:hover, a:hover {
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .quick-actions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-top: 1px solid #e8eaed;
+        }
+
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .action-button {
+            background: white;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #3c4043;
+            font-size: 12px;
+        }
+
+        .action-button:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+            color: #1a73e8;
+        }
+
+        .action-icon {
+            font-size: 16px;
+            margin-bottom: 5px;
         }
 
         .insa-footer {
@@ -265,44 +314,43 @@ button:hover, a:hover {
             100% { opacity: 1; }
         }
 
-        .quick-actions {
-            background: #f8f9fa;
-            padding: 15px;
-            border-top: 1px solid #e8eaed;
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
         }
 
-        .actions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1a73e8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
         }
 
-        .action-button {
-            background: white;
-            border: 1px solid #dadce0;
-            border-radius: 8px;
-            padding: 12px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #3c4043;
-            font-size: 12px;
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        .action-button:hover {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-            color: #1a73e8;
-        }
-
-        .action-icon {
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .column, .column-single {
+                width: 100%;
+            }
+            
+            .main-title {
+                font-size: 2em;
+            }
+            
             .insa-calendar-container {
                 margin: 10px;
                 border-radius: 10px;
@@ -335,212 +383,211 @@ button:hover, a:hover {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
-        /* Loading animation */
-        .loading-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255,255,255,0.9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-        }
-
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #1a73e8;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body>
+    <h1 class="main-title">INSENEERIA VALIKKURSUSED</h1>
 
-<!-- INSA Google Calendar Component -->
-<div class="insa-calendar-container">
-    <!-- Header -->
-    <div class="insa-calendar-header">
-        <div class="insa-logo">📚 INSA KALENDER</div>
-        <div class="insa-subtitle">Inseneeria Valikkursuste Ajakava</div>
+    <!-- Course Cards Section -->
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="https://drive.google.com/uc?export=view&id=12ct7udTtYKP4tO7R3MakknuamT7tseP2" alt="Tark Tööstus">
+                <div class="card-body">
+                    <h5 class="card-title">TARK TÖÖSTUS</h5>
+                    <p class="card-text">Tutvumine kaasaegsete tootmistehnoloogiate ja digitaalse tööstusega.</p>
+                    <p><a href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link">ESITLUS</a></p>
+                </div>
+            </div>
+        </div>
         
-        <div class="calendar-controls">
-            <button class="control-button active" onclick="switchView('month')">Kuu</button>
-            <button class="control-button" onclick="switchView('week')">Nädal</button>
-            <button class="control-button" onclick="switchView('agenda')">Nimekiri</button>
+        <div class="column">
+            <div class="card">
+                <img src="https://drive.google.com/uc?export=view&id=1dT8xSmE_a6clMe4120j6G4FOjwDAXWc_" alt="Andmekogur-sateliit">
+                <div class="card-body">
+                    <h5 class="card-title">ANDMEKOGUR-SATELIIT</h5>
+                    <p class="card-text">Siin saab lisada teise kursuse kirjelduse ja detailid.</p>
+                    <p><a href="https://drive.google.com/file/d/1WC8b4NTviv8rPoZ0HE7mQlWkoC4wG5Qy/view?usp=share_link">ESITLUS</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <img src="https://drive.google.com/uc?export=view&id=1UwgaDQq-jdpxXG8x6hMtIpMB3sUXj5vl" alt="Autonoomne sõiduk">
+                <div class="card-body">
+                    <h5 class="card-title">AUTONOOMNE SÕIDUK</h5>
+                    <p class="card-text">Siin saab lisada kolmanda kursuse kirjelduse ja detailid.</p>
+                    <p><a href="https://drive.google.com/file/d/1-AtPhZdG9D6mwH7qYwqzEGZwf10b7OFC/view?usp=share_link">ESITLUS</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Calendar Embed -->
-    <div class="calendar-embed" id="calendarEmbed">
-        <div class="loading-overlay" id="loadingOverlay">
-            <div class="loading-spinner"></div>
-        </div>
-        <!-- Replace this src with your actual Google Calendar embed URL -->
-        <iframe 
-            id="calendarFrame"
-            src="https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049%40group.calendar.google.com&ctz=Europe%2FTallinn"
-            style="border: 0" 
-            width="800" 
-            height="600" 
-            frameborder="0" 
-            scrolling="no"
-            onload="hideLoading()">
-        </iframe>
-    </div>
-
-    <!-- Quick Actions -->
-    <div class="quick-actions">
-        <div class="actions-grid">
-            <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" class="action-button">
-                <div class="action-icon">➕</div>
-                Lisa sündmus
-            </a>
-            <a href="https://calendar.google.com/calendar" target="_blank" class="action-button">
-                <div class="action-icon">📅</div>
-                Ava Google'is
-            </a>
-            <a href="#" onclick="shareCalendar()" class="action-button">
-                <div class="action-icon">📤</div>
-                Jaga kalendrit
-            </a>
-            <a href="#" onclick="syncCalendar()" class="action-button">
-                <div class="action-icon">🔄</div>
-                Sünkroniseeri
-            </a>
+    <!-- Profile Card Section -->
+    <div class="row">
+        <div class="column-single">
+            <div class="card profile-card">
+                <img src="https://static.wixstatic.com/media/a7f28e_f7e3f445307f430f9781c4695dd28d42~mv2_d_4000_6000_s_4_2.jpg/v1/fill/w_540,h_540,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a7f28e_f7e3f445307f430f9781c4695dd28d42~mv2_d_4000_6000_s_4_2.jpg" alt="Lauri Soosaar">
+                <h1>Lauri Soosaar</h1>
+                <p class="title">CEO & Founder</p>
+                <p>Merkuur Ltd</p>
+                <div class="social-icons">
+                    <a href="https://laurisoosaar.wixsite.com/mysite"><i class="fa fa-dribbble"></i></a> 
+                    <a href="https://www.youtube.com/@laurisoosaar"><i class="fa fa-youtube"></i></a>  
+                    <a href="https://www.facebook.com/lauri.soosaar"><i class="fa fa-facebook"></i></a> 
+                    <a href="tel:+3725185404"><i class="fa fa-phone"></i></a> 
+                </div>
+                <p><a href="mailto:laurisoosaar@gmail.com">Send email</a></p>
+            </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="insa-footer">
-        <div class="footer-links">
-            <a href="#" class="footer-link">📧 Kontakt</a>
-            <a href="#" class="footer-link">📞 +372 5185404</a>
-            <a href="mailto:laurisoosaar@gmail.com" class="footer-link">✉️ laurisoosaar@gmail.com</a>
-        </div>
-        <div class="sync-indicator">
-            <div class="sync-dot"></div>
-            Reaalajas sünkroniseeritud
-        </div>
-    </div>
-</div>
-
-<script>
-    // Calendar view switching
-    function switchView(view) {
-        // Remove active class from all buttons
-        document.querySelectorAll('.control-button').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        
-        // Add active class to clicked button
-        event.target.classList.add('active');
-        
-        // Show loading
-        showLoading();
-        
-        // Update iframe src based on view
-        const iframe = document.getElementById('calendarFrame');
-        const baseUrl = 'https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049%40group.calendar.google.com&ctz=Europe%2FTallinn';
-        
-        let viewMode;
-        switch(view) {
-            case 'week':
-                viewMode = 'WEEK';
-                break;
-            case 'agenda':
-                viewMode = 'AGENDA';
-                break;
-            default:
-                viewMode = 'MONTH';
-        }
-        
-        const newSrc = `${baseUrl}&mode=${viewMode}&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff`;
-        
-        // Simulate loading time
-        setTimeout(() => {
-            iframe.src = newSrc;
-            hideLoading();
-        }, 500);
-    }
-
-    // Loading functions
-    function showLoading() {
-        document.getElementById('loadingOverlay').style.display = 'flex';
-    }
-
-    function hideLoading() {
-        setTimeout(() => {
-            document.getElementById('loadingOverlay').style.display = 'none';
-        }, 1000);
-    }
-
-    // Share calendar
-    function shareCalendar() {
-        const shareUrl = window.location.href;
-        
-        if (navigator.share) {
-            navigator.share({
-                title: 'INSA Kalender',
-                text: 'Vaata INSA kursuste ajakava',
-                url: shareUrl
-            });
-        } else {
-            // Fallback - copy to clipboard
-            navigator.clipboard.writeText(shareUrl).then(() => {
-                alert('Kalendri link kopeeritud lõikelauale!');
-            });
-        }
-    }
-
-    // Sync calendar
-    function syncCalendar() {
-        showLoading();
-        
-        // Simulate sync process
-        setTimeout(() => {
-            // Refresh iframe
-            const iframe = document.getElementById('calendarFrame');
-            iframe.src = iframe.src;
-            hideLoading();
+    <!-- Calendar Section -->
+    <div class="insa-calendar-container">
+        <div class="insa-calendar-header">
+            <div class="insa-logo">INSA KALENDER</div>
+            <div class="insa-subtitle">Inseneeria Valikkursuste Ajakava</div>
             
-            // Show success message
-            const syncDot = document.querySelector('.sync-dot');
-            syncDot.style.background = '#34a853';
-            syncDot.style.animation = 'pulse 0.5s ease-in-out 3';
-        }, 1500);
-    }
+            <div class="calendar-controls">
+                <button class="control-button active" onclick="switchView('month')">Kuu</button>
+                <button class="control-button" onclick="switchView('week')">Nädal</button>
+                <button class="control-button" onclick="switchView('agenda')">Nimekiri</button>
+            </div>
+        </div>
 
-    // Initialize calendar
-    document.addEventListener('DOMContentLoaded', function() {
-        // Hide loading after initial load
-        setTimeout(hideLoading, 2000);
-        
-        // Add some interactive effects
-        const container = document.querySelector('.insa-calendar-container');
-        container.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-            this.style.transition = 'transform 0.3s ease';
+        <div class="calendar-embed" id="calendarEmbed">
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="loading-spinner"></div>
+            </div>
+            <iframe 
+                id="calendarFrame"
+                src="https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn&mode=MONTH&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff"
+                frameborder="0" 
+                scrolling="no"
+                onload="hideLoading()">
+            </iframe>
+        </div>
+
+        <div class="quick-actions">
+            <div class="actions-grid">
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" class="action-button">
+                    <div class="action-icon">+</div>
+                    Lisa sündmus
+                </a>
+                <a href="https://calendar.google.com/calendar" target="_blank" class="action-button">
+                    <div class="action-icon">📅</div>
+                    Ava Google'is
+                </a>
+                <a href="#" onclick="shareCalendar()" class="action-button">
+                    <div class="action-icon">📤</div>
+                    Jaga kalendrit
+                </a>
+                <a href="#" onclick="syncCalendar()" class="action-button">
+                    <div class="action-icon">🔄</div>
+                    Sünkroniseeri
+                </a>
+            </div>
+        </div>
+
+        <div class="insa-footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Kontakt</a>
+                <a href="tel:+3725185404" class="footer-link">+372 5185404</a>
+                <a href="mailto:info@insa.ee" class="footer-link">info@insa.ee</a>
+            </div>
+            <div class="sync-indicator">
+                <div class="sync-dot"></div>
+                Reaalajas sünkroniseeritud
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchView(view) {
+            document.querySelectorAll('.control-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            event.target.classList.add('active');
+            showLoading();
+            
+            const iframe = document.getElementById('calendarFrame');
+            const baseUrl = 'https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn';
+            
+            let viewMode;
+            switch(view) {
+                case 'week':
+                    viewMode = 'WEEK';
+                    break;
+                case 'agenda':
+                    viewMode = 'AGENDA';
+                    break;
+                default:
+                    viewMode = 'MONTH';
+            }
+            
+            const newSrc = `${baseUrl}&mode=${viewMode}&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff`;
+            
+            setTimeout(() => {
+                iframe.src = newSrc;
+                hideLoading();
+            }, 500);
+        }
+
+        function showLoading() {
+            document.getElementById('loadingOverlay').style.display = 'flex';
+        }
+
+        function hideLoading() {
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').style.display = 'none';
+            }, 1000);
+        }
+
+        function shareCalendar() {
+            const shareUrl = window.location.href;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'INSA Kalender',
+                    text: 'Vaata INSA kursuste ajakava',
+                    url: shareUrl
+                });
+            } else {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    alert('Kalendri link kopeeritud lõikelauale!');
+                });
+            }
+        }
+
+        function syncCalendar() {
+            showLoading();
+            
+            setTimeout(() => {
+                const iframe = document.getElementById('calendarFrame');
+                iframe.src = iframe.src;
+                hideLoading();
+                
+                const syncDot = document.querySelector('.sync-dot');
+                syncDot.style.background = '#34a853';
+                syncDot.style.animation = 'pulse 0.5s ease-in-out 3';
+            }, 1500);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(hideLoading, 2000);
+            
+            const container = document.querySelector('.insa-calendar-container');
+            container.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            container.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
         });
-        
-        container.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
-
-
-
-
-  
+    </script>
 </body>
 </html>
