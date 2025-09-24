@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Valikkursus: Inseneeria ja Tootmine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="front.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin: 15px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .module {
+            margin-bottom: 35px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .module:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .module-header {
+            background: #3498db;
+            color: white;
+            padding: 20px 25px;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .module-content {
+            padding: 25px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-list li {
+            margin-bottom: 12px;
+            padding: 12px 15px;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #e74c3c;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .task-list li:hover {
+            border-left-color: #27ae60;
+            transform: translateX(5px);
+        }
+
+        .graded-task {
+            border-left-color: #f39c12 !important;
+            background: #fff8e1;
+        }
+
+        .graded-task::after {
+            content: "HINDELINE";
+            background: #f39c12;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: bold;
+            float: right;
+            margin-top: 2px;
+        }
+
+        .youtube-link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .youtube-link:hover {
+            color: #c0392b;
+            text-decoration: underline;
+        }
+
+        .drive-link {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .drive-link:hover {
+            color: #229954;
+            text-decoration: underline;
+        }
+
+        .quick-links {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .quick-links h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-youtube {
+            background: #ff0000;
+            color: white;
+        }
+
+        .btn-youtube:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+        }
+
+        .btn-drive {
+            background: #4285f4;
+            color: white;
+        }
+
+        .btn-drive:hover {
+            background: #3367d6;
+            transform: translateY(-2px);
+        }
+
+        .btn-back {
+            background: white;
+            color: #333;
+        }
+
+        .btn-back:hover {
+            background: #f1f1f1;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .back-link {
+                position: static;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="index.html" class="back-link">
+            <i class="fa fa-arrow-left"></i> Tagasi
+        </a>
+        <h1>VALIKKURSUS: INSENEERIA JA TOOTMINE</h1>
+        <p>Praktilised oskused 3D modelleerimises, printimises ja CNC töötluses</p>
+    </div>
+
+    <div class="content">
+        <!-- Module 1 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-play-circle"></i> 1. Sissejuhatus
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Inseneeria ja tootmine ettekanne</li>
+                    <li>Valikaine tutvustus ja reeglite kokkuleppimine</li>
+                    <li>Õppematerjalide jagamine - <a href="#" class="drive-link">Google Drive kaust</a> ja <a href="#" class="youtube-link">YouTube link</a></li>
+                    <li>Fusion360 kontode tegemine ja seadistamine (sh. klassigrupi moodustamine)</li>
+                    <li>Kõik teevad omale omanimelise kausta ja kogu kursuse materjal läheb struktureeritult oma kataloogi</li>
+                    <li class="graded-task">Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-cube"></i> 2. Inseneeria ja 3D modelleerimine
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Fusion360 programmi tutvustus</li>
+                    <li>Näidisülesanne avadega kuubik - <a href="https://youtu.be/xGlDGhWElLE?si=0orpVU_RZwXrTDW5" class="youtube-link" target="_blank">Video 1</a>, <a href="https://youtu.be/CvPV8kIwf2c?si=nIaG99x5lntZoH54" class="youtube-link" target="_blank">Video 2</a></li>
+                    <li class="graded-task">LEGO mudeli tegemine video järgi - <a href="#" class="youtube-link">YouTube Link</a></li>
+                    <li class="graded-task">LEGO mudelist mõõtudega joonise tegemine</li>
+                    <li class="graded-task">Fusion360 harjutused - malend vanker h=65mm - <a href="#" class="youtube-link">YouTube Link</a></li>
+                    <li class="graded-task">Riidepuu - <a href="#" class="youtube-link">Video 1</a>, <a href="#" class="youtube-link">Video 2</a></li>
+                    <li class="graded-task">Hammasratas (d=50mm, s=3mm) - <a href="#" class="youtube-link">YouTube Link</a>, <a href="#" class="drive-link">Materjalid</a></li>
+                    <li class="graded-task">QR keytag - <a href="#" class="youtube-link">YouTube Link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-print"></i> 3. 3D printimine
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>3D printimise ettekanne</li>
+                    <li class="graded-task">Printfailide ettevalmistus Snapmaker Luban harjutused (nimesilt, hammasratas)</li>
+                    <li>3D printeri seadistamine ja ettevalmistamine printimiseks</li>
+                    <li>3D printimine mobiilses CNC õppeklassis:</li>
+                    <li style="margin-left: 20px;">• Hammasratas - <a href="#" class="youtube-link">YouTube Link</a></li>
+                    <li style="margin-left: 20px;">• Nimesilt</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-refresh"></i> 4. Pöördprojekteerimine
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li class="graded-task">Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust</li>
+                    <li class="graded-task">Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust</li>
+                    <li class="graded-task">Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-flash"></i> 5. Lasergraveerimine
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Lasergraveerimine ettekanne</li>
+                    <li>Lasergraveerimine ülesanded Snapmaker Luban</li>
+                    <li>Tekst + piltkujutis (3 ripatsit) - <a href="#" class="youtube-link">Inspiratsioon</a></li>
+                    <li>DXF faili export ja G-koodi loomine CNC laserseadmele</li>
+                    <li class="graded-task">Lasergraveerimine praktilised ülesanded:</li>
+                    <li style="margin-left: 20px;">• 3 ripatsit</li>
+                    <li style="margin-left: 20px;">• Hammasratas - <a href="#" class="youtube-link">YouTube Link</a></li>
+                    <li style="margin-left: 20px;">• QR keychain</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-cogs"></i> 6. CNC freesimise
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Õpik lk 102...115</li>
+                    <li>Fusion360 seadisamine (postprotsessor ja tööriistad)</li>
+                    <li>Lõikerajad ja tööriistad</li>
+                    <li>Tutvustamine simulaatoriga</li>
+                    <li>Snapmaker seadmele 3D mudelist g-koodi genereerimine</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-graduation-cap"></i> 7. Karjäär ja edasiõppimisvõimalused
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Kõrgkooli külastus (loengud, töötoad, ringkäik)</li>
+                    <li>Kõrgkooli külastus (loengud, töötoad, ringkäik)</li>
+                    <li>Kõrgkooli külastus (loengud, töötoad, ringkäik)</li>
+                    <li>Kõrgkooli külastus (loengud, töötoad, ringkäik)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-industry"></i> 8. Lehtmetall
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Lehtmetallist painutatud kronstein - <a href="#" class="youtube-link">YouTube Link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-trophy"></i> 9. Lõputöö
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li class="graded-task">Täringu koost</li>
+                    <li class="graded-task">Valmista vineerist tappidega täring</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-check-circle"></i> 10. Võlgnevuste likvideerimine
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="module">
+            <div class="module-header">
+                <i class="fa fa-star"></i> 11. Hindamine/tagasisidestamine/ettepanekud
+            </div>
+            <div class="module-content">
+                <ul class="task-list">
+                    <li>Palun vasta tagaside küsimustikule</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <h3><i class="fa fa-link"></i> Kiired lingid</h3>
+        <div class="button-group">
+            <a href="#" class="btn btn-youtube">
+                <i class="fa fa-youtube-play"></i> YouTube kanal
+            </a>
+            <a href="#" class="btn btn-drive">
+                <i class="fa fa-google"></i> Google Drive
+            </a>
+            <a href="index.html" class="btn btn-back">
+                <i class="fa fa-home"></i> Tagasi avalehele
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
