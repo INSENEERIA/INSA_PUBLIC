@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSA - Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .top-nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .back-link {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .test-section {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .test-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #28a745;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #dc3545;
+        }
+
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border-left: 4px solid #17a2b8;
+        }
+
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #ffc107;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            border: 1px solid #e0e0e0;
+        }
+
+        .module-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .module-header {
+            background: #f8f9fa;
+            padding: 20px 25px;
+            border-bottom: 2px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .module-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .module-content {
+            padding: 25px;
+        }
+
+        .task-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-left: 3px solid #e0e0e0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa fa-graduation-cap"></i>
+                <span>INSA - TEST</span>
+            </a>
+            <a href="index.html" class="back-link">
+                <i class="fa fa-arrow-left"></i> Tagasi
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🔧 Kursuselehe Test</h1>
+            <p>Kontrollin JSON laadimist ja kuvamist</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="test-section">
+            <h2><i class="fa fa-check-circle"></i> Test 1: JSON Embedded (Without File)</h2>
+            <p>Testime, kas leht suudab JSON-i kuvada, kui see on koodi sees.</p>
+            <button onclick="testEmbedded()">Käivita Test 1</button>
+            <div id="test1-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fa fa-file-code-o"></i> Test 2: Load courses.json File</h2>
+            <p>Testime, kas courses.json fail on olemas ja loetav.</p>
+            <button onclick="testLoadFile()">Käivita Test 2</button>
+            <div id="test2-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fa fa-eye"></i> Test 3: Display Sample Course</h2>
+            <p>Näitan näidiskursust, et testida välimust.</p>
+            <button onclick="testDisplay()">Käivita Test 3</button>
+            <div id="test3-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fa fa-info-circle"></i> Diagnostika Info</h2>
+            <div id="diagnostics"></div>
+        </div>
+    </main>
+
+    <script>
+        // Embedded test data
+        const testData = {
+            "test-course": {
+                "title": "TEST KURSUS",
+                "subtitle": "See on testimise kursus",
+                "youtubeChannel": "https://youtube.com/@test",
+                "driveFolder": "https://drive.google.com/test",
+                "modules": [
+                    {
+                        "id": 1,
+                        "icon": "fa-rocket",
+                        "title": "Sissejuhatus",
+                        "tasks": [
+                            {
+                                "text": "Esimene ülesanne"
+                            },
+                            {
+                                "text": "Teine ülesanne",
+                                "graded": true
+                            },
+                            {
+                                "text": "Video vaatamine",
+                                "link": "https://youtube.com/test",
+                                "linkType": "youtube"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "icon": "fa-code",
+                        "title": "Praktiline töö",
+                        "tasks": [
+                            {
+                                "text": "Projektitöö",
+                                "graded": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // Show diagnostics on load
+        window.addEventListener('load', () => {
+            const diag = document.getElementById('diagnostics');
+            diag.innerHTML = `
+                <div class="info">
+                    <strong>Brauser:</strong> ${navigator.userAgent}<br>
+                    <strong>URL:</strong> ${window.location.href}<br>
+                    <strong>Protocol:</strong> ${window.location.protocol}<br>
+                    <strong>Hostname:</strong> ${window.location.hostname || 'local file'}
+                </div>
+                <div class="warning" style="margin-top: 10px;">
+                    <strong>⚠️ Märkus:</strong> Kui kasutad "file://" protokolli (avad faili otse arvutist), 
+                    siis JSON faili laadimine ei pruugi töötada. Pead kasutama veebiserveri 
+                    (nt. Live Server VS Code's) või panema failid veebiserveri kausta.
+                </div>
+            `;
+        });
+
+        // Test 1: Embedded JSON
+        function testEmbedded() {
+            const result = document.getElementById('test1-result');
+            try {
+                const course = testData['test-course'];
+                result.innerHTML = `
+                    <div class="success">
+                        <strong>✅ SUCCESS!</strong><br>
+                        Leitud kursus: ${course.title}<br>
+                        Moodulite arv: ${course.modules.length}
+                    </div>
+                    <pre>${JSON.stringify(course, null, 2)}</pre>
+                `;
+            } catch (error) {
+                result.innerHTML = `
+                    <div class="error">
+                        <strong>❌ ERROR!</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Test 2: Load JSON file
+        async function testLoadFile() {
+            const result = document.getElementById('test2-result');
+            result.innerHTML = '<div class="info">⏳ Laadin courses.json faili...</div>';
+            
+            try {
+                const response = await fetch('courses.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP viga! Status: ${response.status}`);
+                }
+                
+                const text = await response.text();
+                result.innerHTML = `
+                    <div class="success">
+                        <strong>✅ Fail leitud!</strong><br>
+                        Faili suurus: ${text.length} tähemärki
+                    </div>
+                `;
+                
+                try {
+                    const courses = JSON.parse(text);
+                    const courseIds = Object.keys(courses);
+                    result.innerHTML += `
+                        <div class="success" style="margin-top: 10px;">
+                            <strong>✅ JSON parsitud!</strong><br>
+                            Kursuste arv: ${courseIds.length}<br>
+                            Kursuste ID-d: ${courseIds.join(', ')}
+                        </div>
+                        <pre>${text.substring(0, 500)}...</pre>
+                    `;
+                } catch (parseError) {
+                    result.innerHTML += `
+                        <div class="error" style="margin-top: 10px;">
+                            <strong>❌ JSON parsimise viga!</strong><br>
+                            ${parseError.message}
+                        </div>
+                        <pre>${text.substring(0, 500)}</pre>
+                    `;
+                }
+            } catch (error) {
+                result.innerHTML = `
+                    <div class="error">
+                        <strong>❌ Faili laadimine ebaõnnestus!</strong><br>
+                        Viga: ${error.message}<br><br>
+                        <strong>Võimalikud põhjused:</strong><br>
+                        1. Fail 'courses.json' ei ole samas kaustas kui test-course.html<br>
+                        2. Kasutad file:// protokolli (ava failid veebiserveri kaudu)<br>
+                        3. Failinimi on vale (peab olema täpselt 'courses.json')<br>
+                        4. JSON failis on süntaksi viga
+                    </div>
+                `;
+            }
+        }
+
+        // Test 3: Display course
+        function testDisplay() {
+            const result = document.getElementById('test3-result');
+            const course = testData['test-course'];
+            
+            let html = '<h3 style="margin: 20px 0;">Näidiskursuse välimus:</h3>';
+            
+            course.modules.forEach(module => {
+                html += `
+                    <div class="module-card">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fa ${module.icon}"></i>
+                            </div>
+                            <div style="font-size: 1.3em; font-weight: 500; color: #2c3e50;">
+                                ${module.id}. ${module.title}
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            ${module.tasks.map(task => `
+                                <div class="task-item" style="${task.graded ? 'background: #fff8e6; border-left-color: #ffa726;' : ''}">
+                                    ${task.link ? 
+                                        `<a href="${task.link}" style="color: ${task.linkType === 'youtube' ? '#ff0000' : '#667eea'}; text-decoration: none; font-weight: 500;" target="_blank">${task.text}</a>` : 
+                                        task.text
+                                    }
+                                    ${task.graded ? '<span style="float: right; background: #ffa726; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75em; font-weight: 600;">HINDELINE</span>' : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            result.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
