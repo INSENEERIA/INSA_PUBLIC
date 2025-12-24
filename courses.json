@@ -1,1 +1,21 @@
-
+"modules": [
+  {
+    "id": 1,
+    "icon": "fa-car",
+    "title": "Sissejuhatus autonoomsetesse sõidukitesse",
+    "tasks": [
+      {
+        "text": "Mis on autonoomne sõiduk?"
+      },
+      {
+        "text": "Video tutvustus",
+        "link": "https://youtube.com/...",
+        "linkType": "youtube"
+      },
+      {
+        "text": "Esimene ülesanne",
+        "graded": true
+      }
+    ]
+  }
+]
