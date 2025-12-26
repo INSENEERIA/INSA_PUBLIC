@@ -1,11 +1,11 @@
-{
+ <!-- Main Title -->{
   "engineering": {
     "title": "VALIKKURSUS: INSENEERIA JA TOOTMINE",
     "subtitle": "Praktilised oskused 3D modelleerimises, printimises ja CNC töötluses",
     "youtubeChannel": "https://youtube.com/@laurisoosaar?si=NwqPogw68JmPygsq",
     "driveFolder": "",
     "modules": [
-      {
+      {-->
         "id": 1,
         "icon": "fa-play-circle",
         "title": "Sissejuhatus",
