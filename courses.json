@@ -304,6 +304,9 @@
           },
           {
             "text": "Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt",
+           ,
+           "link": "https://drive.google.com/file/d/1o62bsqDU0iRlNJJ8q_cloetYqfXdwlok/view?usp=sharing",
+            "linkType": "drive"
             "graded": true
           }
         ]
@@ -331,6 +334,8 @@
           },
           {
             "text": "LEGO mudelist mõõtudega joonise tegemine",
+           "link": "https://drive.google.com/file/d/1rwy1jRg_IFQgTllF0LX43LnuYoNRS-Bm/view?usp=sharing",
+            "linkType": "drive",
             "graded": true
           },
           {
@@ -378,7 +383,9 @@
             "graded": true
           },
           {
-            "text": "3D printeri seadistamine ja ettevalmistamine printimiseks"
+            "text": "3D printeri seadistamine ja ettevalmistamine printimiseks",
+            "link": "https://youtu.be/jWhwQRfhFdw?si=_Lk5Px22o3rirYC_",
+            "linkType": "youtube"
           },
           {
             "text": "3D printimine mobiilses CNC õppeklassis:"
@@ -431,7 +438,9 @@
             "linkType": "drive"
           },
           {
-            "text": "Lasergraveerimine ülesanded Snapmaker Luban"
+            "text": "Lasergraveerimine ülesanded Snapmaker Luban",
+            "link": "https://youtu.be/8xVTmtsnaDo?si=fx7Qsh6jM_15m0dD",
+            "linkType": "youtube"
           },
           {
             "text": "Tekst + piltkujutis (3 ripatsit)",
@@ -479,7 +488,9 @@
             "text": "Tutvustamine simulaatoriga"
           },
           {
-            "text": "Snapmaker seadmele 3D mudelist g-koodi genereerimine"
+            "text": "Snapmaker seadmele 3D mudelist g-koodi genereerimine",
+            "link": "https://youtu.be/h3vMEiMTlio?si=tk-b8505TP5Tp5yc",
+            "linkType": "youtube"
           }
         ]
       },
@@ -488,7 +499,12 @@
         "icon": "fa-graduation-cap",
         "title": "Karjäär ja edasiõppimisvõimalused",
         "tasks": [
-          {
+           {
+            "text": "Karjäärivõimalused Eesti masina- ja metallitööstuses",
+            "link": "https://drive.google.com/file/d/1lpf3BnM3WP8n9_qJ0hA768QfqCwDvlop/view?usp=share_link",
+            "linkType": "youtube"
+          },
+         {
             "text": "Kõrgkooli külastus (loengud, töötoad, ringkäik)"
           },
           {
