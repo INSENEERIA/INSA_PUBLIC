@@ -1,0 +1,1133 @@
+{
+  "engineering": {
+    "title": "VALIKKURSUS: INSENEERIA JA TOOTMINE",
+    "subtitle": "Praktilised oskused 3D modelleerimises, printimises ja CNC töötluses",
+    "youtubeChannel": "https://youtube.com/@laurisoosaar?si=NwqPogw68JmPygsq",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "Inseneeria ja tootmine ettekanne",
+            "link": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view",
+            "linkType": "drive"
+          },
+          {
+            "text": "Valikaine tutvustus ja reeglite kokkuleppimine"
+          },
+          {
+            "text": "Õppematerjalide jagamine - Google Drive kaust ja YouTube link",
+            "links": [
+              {"url": "#", "text": "Google Drive kaust", "type": "drive"},
+              {"url": "https://www.youtube.com/@laurisoosaar", "text": "YouTube link", "type": "youtube"}
+            ]
+          },
+          {
+            "text": "Fusion360 kontode tegemine ja seadistamine (sh. klassigrupi moodustamine)"
+          },
+          {
+            "text": "Kõik teevad omale omanimelise kausta ja kogu kursuse materjal läheb struktureeritult oma kataloogi"
+          },
+          {
+            "text": "Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-cube",
+        "title": "Inseneeria ja 3D modelleerimine",
+        "tasks": [
+          {
+            "text": "Fusion360 programmi tutvustus"
+          },
+          {
+            "text": "Näidisülesanne avadega kuubik",
+            "links": [
+              {"url": "https://youtu.be/xGlDGhWElLE?si=0orpVU_RZwXrTDW5", "text": "Video 1", "type": "youtube"},
+              {"url": "https://youtu.be/CvPV8kIwf2c?si=nIaG99x5lntZoH54", "text": "Video 2", "type": "youtube"}
+            ]
+          },
+          {
+            "text": "LEGO mudeli tegemine video järgi",
+            "link": "https://youtu.be/7JiZnUguvaA?si=w0iuNVdCt3a2RghS",
+            "linkType": "youtube",
+            "graded": true
+          },
+          {
+            "text": "LEGO mudelist mõõtudega joonise tegemine",
+            "graded": true
+          },
+          {
+            "text": "Fusion360 harjutused - malend vanker h=65mm",
+            "link": "https://youtu.be/Mkv3OPMb7xc?si=1AR2MB8jZdPBJ2hn",
+            "linkType": "youtube",
+            "graded": true
+          },
+          {
+            "text": "Riidepuu",
+            "links": [
+              {"url": "https://youtu.be/ThDHG1ALMv8?si=dAYPjsotndasIbnS", "text": "Video 1", "type": "youtube"},
+              {"url": "https://youtu.be/5YmxV70UtuQ?si=UMgc8bkDek4CD7Es", "text": "Video 2", "type": "youtube"}
+            ],
+            "graded": true
+          },
+          {
+            "text": "Hammasratas (d=50mm, s=3mm)",
+            "links": [
+              {"url": "https://youtu.be/PDmeHT9KZUY?si=2qd9EShzxeaWpuvG", "text": "YouTube Link", "type": "youtube"},
+              {"url": "#", "text": "Materjalid", "type": "drive"}
+            ],
+            "graded": true
+          },
+          {
+            "text": "QR keytag",
+            "link": "https://youtu.be/O62X9J6a_SQ?si=Zz1M3ALdOa7x2bG1",
+            "linkType": "youtube",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-print",
+        "title": "3D printimine",
+        "tasks": [
+          {
+            "text": "3D printimise ettekanne"
+          },
+          {
+            "text": "Printfailide ettevalmistus Snapmaker Luban harjutused (nimesilt, hammasratas)",
+            "graded": true
+          },
+          {
+            "text": "3D printeri seadistamine ja ettevalmistamine printimiseks"
+          },
+          {
+            "text": "3D printimine mobiilses CNC õppeklassis:"
+          },
+          {
+            "text": "• Hammasratas",
+            "link": "https://youtu.be/0DoQgEjrCZQ?si=oBBO-tXH88cdiUhh",
+            "linkType": "youtube",
+            "indent": true
+          },
+          {
+            "text": "• Nimesilt",
+            "indent": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-refresh",
+        "title": "Pöördprojekteerimine",
+        "tasks": [
+          {
+            "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+            "graded": true
+          },
+          {
+            "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+            "graded": true
+          },
+          {
+            "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-flash",
+        "title": "Lasergraveerimine",
+        "tasks": [
+          {
+            "text": "Lasergraveerimine ettekanne"
+          },
+          {
+            "text": "Lasergraveerimine ülesanded Snapmaker Luban"
+          },
+          {
+            "text": "Tekst + piltkujutis (3 ripatsit)",
+            "link": "https://youtu.be/3AXh0smKITQ?si=Cais8inOrxbT5K6J",
+            "linkType": "youtube"
+          },
+          {
+            "text": "DXF faili export ja G-koodi loomine CNC laserseadmele"
+          },
+          {
+            "text": "Lasergraveerimine praktilised ülesanded:",
+            "graded": true
+          },
+          {
+            "text": "• 3 ripatsit",
+            "indent": true
+          },
+          {
+            "text": "• Hammasratas",
+            "indent": true
+          },
+          {
+            "text": "• QR keychain",
+            "indent": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-cogs",
+        "title": "CNC freesimise",
+        "tasks": [
+          {
+            "text": "Õpik lk 102...115"
+          },
+          {
+            "text": "Fusion360 seadisamine (postprotsessor ja tööriistad)"
+          },
+          {
+            "text": "Lõikerajad ja tööriistad"
+          },
+          {
+            "text": "Tutvustamine simulaatoriga"
+          },
+          {
+            "text": "Snapmaker seadmele 3D mudelist g-koodi genereerimine"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-graduation-cap",
+        "title": "Karjäär ja edasiõppimisvõimalused",
+        "tasks": [
+          {
+            "text": "Kõrgkooli külastus (loengud, töötoad, ringkäik)"
+          },
+          {
+            "text": "Kõrgkooli külastus (loengud, töötoad, ringkäik)"
+          },
+          {
+            "text": "Sektori ettevõtte külastus (loengud, ringkäik)"
+          },
+          {
+            "text": "Sektori ettevõtte külastus (loengud, ringkäik)"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-industry",
+        "title": "Lehtmetall",
+        "tasks": [
+          {
+            "text": "Lehtmetallist painutatud kronstein",
+            "link": "https://youtu.be/qmVbZvd45tM?si=cMPSKNN20sFWj5c8",
+            "linkType": "youtube"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-trophy",
+        "title": "Lõputöö",
+        "tasks": [
+          {
+            "text": "Täringu koost",
+            "graded": true
+          },
+          {
+            "text": "Valmista vineerist tappidega täring",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-check-circle",
+        "title": "Võlgnevuste likvideerimine",
+        "tasks": [
+          {
+            "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
+          }
+        ]
+      }
+    ]
+  },
+  "tark-toostus": {
+    "title": "TARK TÖÖSTUS",
+    "subtitle": "Targa tööstuse lahendused ja automatiseerimine",
+    "youtubeChannel": "",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "Kursuse tutvustus ja eesmärgid"
+          },
+          {
+            "text": "Targa tööstuse kontseptsioon ja põhimõtted"
+          },
+          {
+            "text": "Tööstus 4.0 ülevaade"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-industry",
+        "title": "IoT ja andurid",
+        "tasks": [
+          {
+            "text": "Internet of Things (IoT) põhimõtted"
+          },
+          {
+            "text": "Andurite tüübid ja rakendused"
+          },
+          {
+            "text": "Andmete kogumine ja edastamine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-cogs",
+        "title": "Automatiseerimine",
+        "tasks": [
+          {
+            "text": "Tööstusautomaatika põhimõtted"
+          },
+          {
+            "text": "PLC programmeerimise alused"
+          },
+          {
+            "text": "Praktiline automaatika projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-robot",
+        "title": "Robotid tööstuses",
+        "tasks": [
+          {
+            "text": "Tööstusrobotite tüübid"
+          },
+          {
+            "text": "Roboti programmeerimine"
+          },
+          {
+            "text": "Praktilised harjutused robotiga",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-database",
+        "title": "Andmeanalüüs",
+        "tasks": [
+          {
+            "text": "Big Data tööstuses"
+          },
+          {
+            "text": "Andmete visualiseerimine"
+          },
+          {
+            "text": "Ennustav hooldus"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-cloud",
+        "title": "Pilvetehnoloogiad",
+        "tasks": [
+          {
+            "text": "Pilvepõhised lahendused"
+          },
+          {
+            "text": "Andmete salvestamine pilves"
+          },
+          {
+            "text": "Turvaküsimused"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-shield",
+        "title": "Küberturvalisus",
+        "tasks": [
+          {
+            "text": "Tööstuslike süsteemide turvalisus"
+          },
+          {
+            "text": "Ründevektorid ja kaitse"
+          },
+          {
+            "text": "Turvaanalüüs projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-lightbulb-o",
+        "title": "Innovatsioon ja arendus",
+        "tasks": [
+          {
+            "text": "Innovatsiooniprotsess"
+          },
+          {
+            "text": "Ideede genereerimine"
+          },
+          {
+            "text": "Prototüüpimine"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-building",
+        "title": "Ettevõtete külastused",
+        "tasks": [
+          {
+            "text": "Targa tööstuse ettevõtte külastus"
+          },
+          {
+            "text": "Tehnoloogiate demonstratsioon"
+          },
+          {
+            "text": "Küsimused-vastused spetsialistidega"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-trophy",
+        "title": "Lõpuprojekt",
+        "tasks": [
+          {
+            "text": "Targa tööstuse lahenduse projekteerimine",
+            "graded": true
+          },
+          {
+            "text": "Projektide esitlused",
+            "graded": true
+          },
+          {
+            "text": "Tagasiside ja hindamine"
+          }
+        ]
+      }
+    ]
+  },
+  "andmekogur-sateliit": {
+    "title": "ANDMEKOGUR-SATELIIT",
+    "subtitle": "Satelliittehnoloogia ja andmekogumine",
+    "youtubeChannel": "",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "Satelliittehnoloogia ülevaade"
+          },
+          {
+            "text": "CubeSat standardid"
+          },
+          {
+            "text": "Kosmosemissioonide põhimõtted"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-rocket",
+        "title": "Satelliidi komponendid",
+        "tasks": [
+          {
+            "text": "Satelliidi arhitektuur"
+          },
+          {
+            "text": "Toitesüsteemid ja päikesepaneelid"
+          },
+          {
+            "text": "Komponentide valik ja projekteerimine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-microchip",
+        "title": "Andurid ja mõõteriist",
+        "tasks": [
+          {
+            "text": "Satelliidiandurite tüübid"
+          },
+          {
+            "text": "Temperatuuri-, rõhu- ja kiirgusandurid"
+          },
+          {
+            "text": "Andurite kalibreerimine"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-wifi",
+        "title": "Side ja kommunikatsioon",
+        "tasks": [
+          {
+            "text": "Raadioside põhimõtted"
+          },
+          {
+            "text": "Antenni projekteerimine"
+          },
+          {
+            "text": "Andmeedastuse protokollid",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-code",
+        "title": "Tarkvara arendus",
+        "tasks": [
+          {
+            "text": "Pardatarkvara programmeerimine"
+          },
+          {
+            "text": "Andmete kogumine ja salvestamine"
+          },
+          {
+            "text": "Koodiprojekt - andmekogur",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-flask",
+        "title": "Testimine ja simulatsioon",
+        "tasks": [
+          {
+            "text": "Satelliidi testimise metoodikad"
+          },
+          {
+            "text": "Keskkonnakatsed"
+          },
+          {
+            "text": "Simulatsioonid ja analüüs"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-line-chart",
+        "title": "Andmeanalüüs",
+        "tasks": [
+          {
+            "text": "Satelliidiandmete töötlemine"
+          },
+          {
+            "text": "Piltide ja sensoriandmete analüüs"
+          },
+          {
+            "text": "Andmeanalüüsi projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-globe",
+        "title": "Orbiidimehaanika",
+        "tasks": [
+          {
+            "text": "Orbiitide tüübid ja omadused"
+          },
+          {
+            "text": "Satelliidi liikumine ja trajektoorid"
+          },
+          {
+            "text": "Orbiidi kalkulatsioonid"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-users",
+        "title": "Meeskonnatöö ja projektimine",
+        "tasks": [
+          {
+            "text": "Satelliidiprojekti planeerimine"
+          },
+          {
+            "text": "Meeskonnatöö rollid ja vastutus"
+          },
+          {
+            "text": "Projekti esitlus",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-trophy",
+        "title": "Lõpuprojekt",
+        "tasks": [
+          {
+            "text": "CubeSat prototüübi projekteerimine",
+            "graded": true
+          },
+          {
+            "text": "Prototüübi demonstratsioon",
+            "graded": true
+          },
+          {
+            "text": "Dokumentatsioon ja esitlus"
+          }
+        ]
+      }
+    ]
+  },
+  "autonoomne-soiduk": {
+    "title": "AUTONOOMNE SÕIDUK",
+    "subtitle": "Isejuhtivate sõidukite tehnoloogiad",
+    "youtubeChannel": "",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "Autonoomsete sõidukite põhimõtted"
+          },
+          {
+            "text": "Automaatika tasemed (Level 0-5)"
+          },
+          {
+            "text": "Tulevikuväljavaade ja väljakutsed"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-camera",
+        "title": "Sensorid ja kaamerad",
+        "tasks": [
+          {
+            "text": "LIDAR, RADAR ja ultrahelisensorid"
+          },
+          {
+            "text": "Kaamerad ja masinõpe"
+          },
+          {
+            "text": "Sensorfusioon",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-map",
+        "title": "Kaardistamine ja lokaliseerimine",
+        "tasks": [
+          {
+            "text": "GPS ja GNSS süsteemid"
+          },
+          {
+            "text": "SLAM (Simultaneous Localization and Mapping)"
+          },
+          {
+            "text": "Kaardistamise projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-eye",
+        "title": "Masinõpe ja nägemine",
+        "tasks": [
+          {
+            "text": "Computer Vision põhimõtted"
+          },
+          {
+            "text": "Objektide tuvastamine"
+          },
+          {
+            "text": "Liiklusmärkide äratundmine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-road",
+        "title": "Tee planeerimine",
+        "tasks": [
+          {
+            "text": "Teede kaardistamine"
+          },
+          {
+            "text": "Trajektoori planeerimine"
+          },
+          {
+            "text": "Takistuste vältimine"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-code",
+        "title": "Programmeerimine ja kontroll",
+        "tasks": [
+          {
+            "text": "ROS (Robot Operating System)"
+          },
+          {
+            "text": "Juhtimisalgoritmid"
+          },
+          {
+            "text": "Sõiduki juhtimise kood",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-car",
+        "title": "Praktilised testid",
+        "tasks": [
+          {
+            "text": "Miniatuursõiduki koostamine"
+          },
+          {
+            "text": "Liikumise programmeerimine"
+          },
+          {
+            "text": "Testrajal sõitmine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-shield",
+        "title": "Turvalisus ja eetika",
+        "tasks": [
+          {
+            "text": "Funktsionaalne turvalisus"
+          },
+          {
+            "text": "Küberturvalisus"
+          },
+          {
+            "text": "Eetilised dilemmad"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-building",
+        "title": "Ettevõtete külastused",
+        "tasks": [
+          {
+            "text": "Autotootja külastus"
+          },
+          {
+            "text": "Tehnoloogiafirmade tutvustus"
+          },
+          {
+            "text": "Testikeskuse ringkäik"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-trophy",
+        "title": "Lõpuprojekt",
+        "tasks": [
+          {
+            "text": "Autonoomse sõiduki prototüüp",
+            "graded": true
+          },
+          {
+            "text": "Demonstratsioon ja testimine",
+            "graded": true
+          },
+          {
+            "text": "Projekti esitlus"
+          }
+        ]
+      }
+    ]
+  },
+  "e-cadrina": {
+    "title": "E-CADRINA",
+    "subtitle": "Elektrooniline CAD ja disain",
+    "youtubeChannel": "",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "CAD tarkvara tutvustus"
+          },
+          {
+            "text": "Elektroonilise disaini põhimõtted"
+          },
+          {
+            "text": "Tööriistade ülevaade"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-pencil",
+        "title": "Skeemide joonistamine",
+        "tasks": [
+          {
+            "text": "Elektriskeemide põhimõtted"
+          },
+          {
+            "text": "Komponentide sümbolid"
+          },
+          {
+            "text": "Esimene skeem projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-microchip",
+        "title": "Komponendid ja andmebaasid",
+        "tasks": [
+          {
+            "text": "Elektroonilised komponendid"
+          },
+          {
+            "text": "Komponentide valimine"
+          },
+          {
+            "text": "Andmelehtede lugemine"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-th",
+        "title": "PCB disain",
+        "tasks": [
+          {
+            "text": "Trükkplaadi põhimõtted"
+          },
+          {
+            "text": "Komponentide paigutus"
+          },
+          {
+            "text": "Routing ja traceid",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-bolt",
+        "title": "Toiteallikad ja signaalid",
+        "tasks": [
+          {
+            "text": "Toitevõrgu projekteerimine"
+          },
+          {
+            "text": "Signaali terviklikkus"
+          },
+          {
+            "text": "EMC ja häired"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-check-square-o",
+        "title": "Simulatsioon ja analüüs",
+        "tasks": [
+          {
+            "text": "SPICE simulatsioonid"
+          },
+          {
+            "text": "Vooluringide analüüs"
+          },
+          {
+            "text": "Simulatsiooniprojekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-industry",
+        "title": "Tootmine ja prototüüpimine",
+        "tasks": [
+          {
+            "text": "PCB tootmise protsess"
+          },
+          {
+            "text": "Jootemine ja assembleerimine"
+          },
+          {
+            "text": "Prototüübi valmistamine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-flask",
+        "title": "Testimine ja debugimine",
+        "tasks": [
+          {
+            "text": "Testimismeetodid"
+          },
+          {
+            "text": "Mõõteriistade kasutamine"
+          },
+          {
+            "text": "Vigade otsimine ja parandamine"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-rocket",
+        "title": "Edasijõudnud teemad",
+        "tasks": [
+          {
+            "text": "Mitmekihilised plaadid"
+          },
+          {
+            "text": "RF disain"
+          },
+          {
+            "text": "Kõrge kiiruse signaalid"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-trophy",
+        "title": "Lõpuprojekt",
+        "tasks": [
+          {
+            "text": "Elektroonilise seadme projekteerimine",
+            "graded": true
+          },
+          {
+            "text": "PCB valmistamine ja testimine",
+            "graded": true
+          },
+          {
+            "text": "Dokumentatsioon ja esitlus"
+          }
+        ]
+      }
+    ]
+  },
+  "sillamae-inseneeria": {
+    "title": "SILLAMÄE INSENEERIA",
+    "subtitle": "Inseneerialahenused Sillamäel",
+
+     "youtubeChannel": "",
+    "driveFolder": "",
+    "modules": [
+      {
+        "id": 1,
+        "icon": "fa-play-circle",
+        "title": "Sissejuhatus",
+        "tasks": [
+          {
+            "text": "CAD tarkvara tutvustus"
+          },
+          {
+            "text": "Elektroonilise disaini põhimõtted"
+          },
+          {
+            "text": "Tööriistade ülevaade"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "fa-pencil",
+        "title": "Skeemide joonistamine",
+        "tasks": [
+          {
+            "text": "Elektriskeemide põhimõtted"
+          },
+          {
+            "text": "Komponentide sümbolid"
+          },
+          {
+            "text": "Esimene skeem projekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "fa-microchip",
+        "title": "Komponendid ja andmebaasid",
+        "tasks": [
+          {
+            "text": "Elektroonilised komponendid"
+          },
+          {
+            "text": "Komponentide valimine"
+          },
+          {
+            "text": "Andmelehtede lugemine"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "fa-th",
+        "title": "PCB disain",
+        "tasks": [
+          {
+            "text": "Trükkplaadi põhimõtted"
+          },
+          {
+            "text": "Komponentide paigutus"
+          },
+          {
+            "text": "Routing ja traceid",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "fa-bolt",
+        "title": "Toiteallikad ja signaalid",
+        "tasks": [
+          {
+            "text": "Toitevõrgu projekteerimine"
+          },
+          {
+            "text": "Signaali terviklikkus"
+          },
+          {
+            "text": "EMC ja häired"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "fa-check-square-o",
+        "title": "Simulatsioon ja analüüs",
+        "tasks": [
+          {
+            "text": "SPICE simulatsioonid"
+          },
+          {
+            "text": "Vooluringide analüüs"
+          },
+          {
+            "text": "Simulatsiooniprojekt",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "fa-industry",
+        "title": "Tootmine ja prototüüpimine",
+        "tasks": [
+          {
+            "text": "PCB tootmise protsess"
+          },
+          {
+            "text": "Jootemine ja assembleerimine"
+          },
+          {
+            "text": "Prototüübi valmistamine",
+            "graded": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "icon": "fa-flask",
+        "title": "Testimine ja debugimine",
+        "tasks": [
+          {
+            "text": "Testimismeetodid"
+          },
+          {
+            "text": "Mõõteriistade kasutamine"
+          },
+          {
+            "text": "Vigade otsimine ja parandamine"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "icon": "fa-rocket",
+        "title": "Edasijõudnud teemad",
+        "tasks": [
+          {
+            "text": "Mitmekihilised plaadid"
+          },
+          {
+            "text": "RF disain"
+          },
+          {
+            "text": "Kõrge kiiruse signaalid"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "icon": "fa-trophy",
+        "title": "Lõpuprojekt",
+        "tasks": [
+          {
+            "text": "Elektroonilise seadme projekteerimine",
+            "graded": true
+          },
+          {
+            "text": "PCB valmistamine ja testimine",
+            "graded": true
+          },
+          {
+            "text": "Dokumentatsioon ja esitlus"
+          }
+        ]
+      }
+    ]
+  },
