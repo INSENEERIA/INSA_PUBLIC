@@ -369,7 +369,9 @@
         "title": "3D printimine",
         "tasks": [
           {
-            "text": "3D printimise ettekanne"
+            "text": "3D printimise ettekanne",
+           "link": "https://docs.google.com/presentation/d/19hONiDgSh9jlTqGCXAAhzsZiG79tpFttFa7BR624IpE/edit?usp=share_link",
+            "linkType": "drive"
           },
           {
             "text": "Printfailide ettevalmistus Snapmaker Luban harjutused (nimesilt, hammasratas)",
@@ -400,14 +402,20 @@
         "tasks": [
           {
             "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+            "link": "https://drive.google.com/drive/folders/1Uy8gqsWQxXM7pmt0v7cRX2Qd-ritlOoH?usp=share_link",
+            "linkType": "drive"
             "graded": true
           },
           {
             "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+           "link": "https://drive.google.com/drive/folders/1Uy8gqsWQxXM7pmt0v7cRX2Qd-ritlOoH?usp=share_link",
+            "linkType": "drive"
             "graded": true
           },
           {
             "text": "Jooniste digitaliseerimine (3D mudel + mõõtudega joonis) – vali üks kogumikust",
+           "link": "https://drive.google.com/drive/folders/1Uy8gqsWQxXM7pmt0v7cRX2Qd-ritlOoH?usp=share_link",
+            "linkType": "drive"
             "graded": true
           }
         ]
@@ -418,7 +426,9 @@
         "title": "Lasergraveerimine",
         "tasks": [
           {
-            "text": "Lasergraveerimine ettekanne"
+            "text": "Lasergraveerimine ettekanne",
+           "link": "https://docs.google.com/presentation/d/12qZTlwXqBk1IALHRbpecdCAhL3ZoAH2L/edit?usp=share_link&ouid=104940014030952422760&rtpof=true&sd=true",
+            "linkType": "drive"
           },
           {
             "text": "Lasergraveerimine ülesanded Snapmaker Luban"
@@ -456,6 +466,8 @@
         "tasks": [
           {
             "text": "Õpik lk 102...115"
+            "link": "https://drive.google.com/file/d/1W1Ne2KDYBQ_f0Rml0DhCiSXSQb6yAFiD/view?usp=share_link",
+            "linkType": "drive"
           },
           {
             "text": "Fusion360 seadisamine (postprotsessor ja tööriistad)"
@@ -509,6 +521,8 @@
         "tasks": [
           {
             "text": "Täringu koost",
+           "link": "https://drive.google.com/file/d/147OLoxupHy0Wdd62zZVVr5OY0EuggIhJ/view?usp=share_link",
+            "linkType": "drive"
             "graded": true
           },
           {
