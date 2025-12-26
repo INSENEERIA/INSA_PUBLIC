@@ -33,12 +33,11 @@
             "text": "Kõik teevad omale omanimelise kausta ja kogu kursuse materjal läheb struktureeritult oma kataloogi"
           },
           {
-            "text": "Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt",
-           ,
-           "link": "https://drive.google.com/file/d/1o62bsqDU0iRlNJJ8q_cloetYqfXdwlok/view?usp=sharing",
-            "linkType": "drive"
-            "graded": true
-          }
+  "text": "Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt",
+  "link": "https://drive.google.com/file/d/1o62bsqDU0iRlNJJ8q_cloetYqfXdwlok/view?usp=sharing",
+  "linkType": "drive",
+  "graded": true
+}
         ]
       },
       {
