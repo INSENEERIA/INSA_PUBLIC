@@ -144,6 +144,24 @@ body {
     color: white;
     text-decoration: none;
 }
+.card-link-small {
+    color: #a8e6cf;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.card-link-small:hover {
+    background: #a8e6cf;
+    color: white;
+    text-decoration: none;
+}
 
 /* Profile Card Specific Styles */
 .profile-card .card-body {
