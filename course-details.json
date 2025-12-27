@@ -1,5 +1,5 @@
 {
-  "inseneeria-tootmine": {
+  "tart1": {
     "title": "Inseneeria ja tootmine",
     "overview": "See kursus tutvustab inseneeria ja tootmise põhiprintsiipe, kombineerides teoreetilisi teadmisi praktiliste oskustega. Õpilased saavad kogemusi tootmisprotsessides ja projekteerimises.",
     "duration": "Kokkuleppel",
@@ -28,7 +28,7 @@
     "contactEmail": "laurisoosaar@gmail.com",
     "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
   },
-  "mehhatroonika1": {
+  "tart2": {
     "title": "Mehhatroonika 1",
     "overview": "See kursus tutvustab mehhatroonika põhiprintsiipe, kombineerides mehaanika, elektroonika ja programmeerimise teadmisi. Õpilased saavad praktilise kogemuse robotite projekteerimises ja ehitamises.",
     "duration": "Kokkuleppel",
@@ -43,12 +43,21 @@
       "Lihtsa robootika süsteemi loomist",
       "Probleemide lahendamist inseneriteaduses"
     ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
+    ],
     "requirements": "Eelteadmised pole vajalikud, kuid huvi tehnika ja programmeerimise vastu on kasulik. Matemaatika ja füüsika baasoskused aitavad kursust paremini mõista.",
     "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
     "contactEmail": "laurisoosaar@gmail.com",
     "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
   },
-  "tark-maja": {
+  "tart3": {
     "title": "Targa maja lihtsad lahendused",
     "overview": "Kursus tutvustab nutikate kodude ja hoonete tehnoloogiaid. Õpilased õpivad, kuidas luua ja programmeerida lihtsaid targa maja süsteeme.",
     "duration": "Kokkuleppel",
@@ -63,12 +72,21 @@
       "Turvalisuse süsteemid",
       "Praktiliste projektide loomine"
     ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
+    ],
     "requirements": "Eelteadmised pole vajalikud. Huvi tehnoloogia ja automatiseerimise vastu on kasulik.",
     "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
     "contactEmail": "laurisoosaar@gmail.com",
     "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
   },
-  "ands-inseneeria": {
+  "ands1": {
     "title": "Sissejuhatus inseneeriasse",
     "overview": "Kursus annab ülevaate inseneeria erinevatest valdkondadest ja tutvustab inseneriteaduse põhimõtteid.",
     "duration": "Kokkuleppel",
@@ -83,12 +101,21 @@
       "Tehnilise dokumentatsiooni loomine",
       "Esitlusoskused"
     ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
+    ],
     "requirements": "Eelteadmised pole vajalikud. Kursus sobib kõigile, kes tahavad inseneeriaga tutvuda.",
     "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
     "contactEmail": "laurisoosaar@gmail.com",
     "materialLink": null
   },
-  "ands-mehhatroonika": {
+  "ands2": {
     "title": "Sissejuhatus mehhatroonikasse",
     "overview": "Kursus tutvustab mehhatroonika põhimõtteid ja annab praktilise kogemuse lihtsate mehhatrooniliste süsteemide loomiseks.",
     "duration": "Kokkuleppel",
@@ -103,12 +130,21 @@
       "Lihtne programmeerimine",
       "Projektitöö"
     ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
+    ],
     "requirements": "Eelteadmised pole vajalikud, kuid huvi tehnoloogia vastu on kasulik.",
     "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
     "contactEmail": "laurisoosaar@gmail.com",
     "materialLink": null
   },
-  "cansat": {
+  "ands3": {
     "title": "CanSat sateliit",
     "overview": "Kursus keskendub CanSat satelliidi projekteerimisele, ehitamisele ja testimisele. Õpilased võtavad osa võistlusest.",
     "duration": "Kokkuleppel",
@@ -122,6 +158,15 @@
       "Meeskonnatöö",
       "Projekti juhtimine",
       "Võistluseks ettevalmistamine"
+    ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
     ],
     "requirements": "Soovitatav on eelnev kogemus elektroonika ja programmeerimisega. Kursus nõuab pühendumist ja meeskonnatööd.",
     "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",

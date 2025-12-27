@@ -1,6 +1,6 @@
  {
  
-  "inseneeria-tootmine": {
+  "tart1": {
     "title": "INSENEERIA JA TOOTMINE",
     "subtitle": "Targa tööstuse lahendused ja automatiseerimine",
     "youtubeChannel": "",
@@ -15,32 +15,24 @@
             "text": "Inseneeria ja tootmine ettekanne",
             "link": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view",
             "linkType": "drive"
-          },
-          {
+          }, {
             "text": "Valikaine tutvustus ja reeglite kokkuleppimine"
-          },
-          {
+          }, {
             "text": "Õppematerjalide jagamine - Google Drive kaust ja YouTube link",
             "links": [
               {"url": "#", "text": "Google Drive kaust", "type": "drive"},
               {"url": "https://www.youtube.com/@laurisoosaar", "text": "YouTube link", "type": "youtube"}
-            ]
-          },
-          {
+            ]}, {
             "text": "Fusion360 kontode tegemine ja seadistamine (sh. klassigrupi moodustamine)"
-          },
-          {
+          }, {
             "text": "Kõik teevad omale omanimelise kausta ja kogu kursuse materjal läheb struktureeritult oma kataloogi"
-          },
-          {
+          }, {
   "text": "Praktiline ülesanne keskkonnas Tinkercad.com – nimesilt",
   "link": "https://drive.google.com/file/d/1o62bsqDU0iRlNJJ8q_cloetYqfXdwlok/view?usp=sharing",
   "linkType": "drive",
   "graded": true
 }
-        ]
-      },
-      {
+        ]}, {
         "id": 2,
         "icon": "fa-cube",
         "title": "Inseneeria ja 3D modelleerimine",
@@ -300,8 +292,51 @@
       }
     ]
   },
-  "andmekogur-sateliit": {
-    "title": "ANDMEKOGUR-SATELIIT",
+   "tart2": {
+     "title": "MEHHATROONIKA 1",
+     "subtitle": "Inseneerialahenused",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-wrench",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+   "tart3": {
+     "title": "TARGA MAJA LIHTSAD LAHENDUSED",
+     "subtitle": "Inseneerialahenused",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-wrench",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+
+  "ands1": {
+    "title": "SISSEJUHATUS INSENEERIASSE",
     "subtitle": "Satelliittehnoloogia ja andmekogumine",
     "youtubeChannel": "",
     "driveFolder": "",
@@ -321,8 +356,49 @@
       }
     ]
   },
-  "autonoomne-soiduk": {
-    "title": "AUTONOOMNE SÕIDUK",
+   "ands2": {
+     "title": "SISSEJUHATUS MEHHATROONIKASSE",
+     "subtitle": "Satelliittehnoloogia ja andmekogumine",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-rocket",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },"ands3": {
+   "title": "ANDMEKOGUR-SATELIIT",
+   "subtitle": "Satelliittehnoloogia ja andmekogumine",
+   "youtubeChannel": "",
+   "driveFolder": "",
+   "modules": [
+     {
+       "id": 1,
+       "icon": "fa-rocket",
+       "title": "Sissejuhatus",
+       "tasks": [
+         {
+           "text": "Kursuse tutvustus"
+         },
+         {
+           "text": "Lisa oma sisu siia"
+         }
+       ]
+     }
+   ]
+ },
+  "auts1": {
+    "title": "KASUTAJAKESKNE DISAIN JA PROTOTÜÜPIMINE",
     "subtitle": "Isejuhtivate sõidukite tehnoloogiad",
     "youtubeChannel": "",
     "driveFolder": "",
@@ -342,7 +418,49 @@
       }
     ]
   },
-  "e-cadrina": {
+   "auts2": {
+     "title": "MEHHATROONIKA 2",
+     "subtitle": "Isejuhtivate sõidukite tehnoloogiad",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-car",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+   "auts3": {
+     "title": "AUTONOOMNE SÕIDUK - VÕISTLUS",
+     "subtitle": "Isejuhtivate sõidukite tehnoloogiad",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-car",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+  "cads1": {
     "title": "E-CADRINA",
     "subtitle": "Elektrooniline CAD ja disain",
     "youtubeChannel": "",
@@ -363,7 +481,49 @@
       }
     ]
   },
-  "sillamae-inseneeria": {
+   "cads2": {
+     "title": "E-CADRINA",
+     "subtitle": "Elektrooniline CAD ja disain",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-microchip",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+   "cads3": {
+     "title": "E-CADRINA - VÕISTLUS",
+     "subtitle": "Elektrooniline CAD ja disain",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-microchip",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+  "silt1": {
     "title": "SILLAMÄE INSENEERIA",
     "subtitle": "Inseneerialahenused Sillamäel",
     "youtubeChannel": "",
@@ -383,5 +543,47 @@
         ]
       }
     ]
-  }
+  },
+   "silt2": {
+     "title": "SILLAMÄE INSENEERIA",
+     "subtitle": "Inseneerialahenused Sillamäel",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-wrench",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   },
+   "silt3": {
+     "title": "SILLAMÄE INSENEERIA",
+     "subtitle": "Inseneerialahenused Sillamäel",
+     "youtubeChannel": "",
+     "driveFolder": "",
+     "modules": [
+       {
+         "id": 1,
+         "icon": "fa-wrench",
+         "title": "Sissejuhatus",
+         "tasks": [
+           {
+             "text": "Kursuse tutvustus"
+           },
+           {
+             "text": "Lisa oma sisu siia"
+           }
+         ]
+       }
+     ]
+   }
 }
