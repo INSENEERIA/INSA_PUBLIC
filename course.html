@@ -4,306 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">INSA - Kursus</title>
+    <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-            position: relative;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2.2em;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        .header p {
-            margin: 15px 0 0 0;
-            opacity: 0.9;
-            font-size: 1.1em;
-        }
-
-        .back-link {
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .back-link:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .module {
-            margin-bottom: 35px;
-            border-left: 4px solid #3498db;
-            background: #f8f9fa;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .module:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .module-header {
-            background: #3498db;
-            color: white;
-            padding: 20px 25px;
-            font-weight: 600;
-            font-size: 1.2em;
-        }
-
-        .module-content {
-            padding: 25px;
-        }
-
-        .task-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .task-list li {
-            margin-bottom: 12px;
-            padding: 12px 15px;
-            background: white;
-            border-radius: 6px;
-            border-left: 3px solid #e74c3c;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-
-        .task-list li:hover {
-            border-left-color: #27ae60;
-            transform: translateX(5px);
-        }
-
-        .task-list li.indent {
-            margin-left: 30px;
-            font-size: 0.95em;
-        }
-
-        .graded-task {
-            border-left-color: #f39c12 !important;
-            background: #fff8e1;
-            position: relative;
-            padding-right: 120px;
-        }
-
-        .graded-badge {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #f39c12;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 10px;
-            font-size: 0.8em;
-            font-weight: bold;
-        }
-
-        .youtube-link {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .youtube-link:hover {
-            color: #c0392b;
-            text-decoration: underline;
-        }
-
-        .drive-link {
-            color: #27ae60;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .drive-link:hover {
-            color: #229954;
-            text-decoration: underline;
-        }
-
-        .task-link {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .task-link:hover {
-            color: #2980b9;
-            text-decoration: underline;
-        }
-
-        .quick-links {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 30px;
-            text-align: center;
-        }
-
-        .quick-links h3 {
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn-youtube {
-            background: #ff0000;
-            color: white;
-        }
-
-        .btn-youtube:hover {
-            background: #cc0000;
-            transform: translateY(-2px);
-        }
-
-        .btn-drive {
-            background: #4285f4;
-            color: white;
-        }
-
-        .btn-drive:hover {
-            background: #3367d6;
-            transform: translateY(-2px);
-        }
-
-        .btn-back {
-            background: white;
-            color: #333;
-        }
-
-        .btn-back:hover {
-            background: #f1f1f1;
-            transform: translateY(-2px);
-        }
-
-        /* Loading State */
-        .loading {
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .loading i {
-            font-size: 48px;
-            color: #3498db;
-        }
-
-        .loading p {
-            margin-top: 20px;
-            color: #666;
-        }
-
-        /* Error State */
-        .error-message {
-            background: #ffebee;
-            color: #c62828;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 40px 20px;
-            border-left: 4px solid #c62828;
-        }
-
-        .error-message a {
-            color: #c62828;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                border-radius: 10px;
-            }
-
-            .header {
-                padding: 30px 20px;
-            }
-
-            .content {
-                padding: 20px;
-            }
-
-            .back-link {
-                position: static;
-                display: inline-block;
-                margin-bottom: 20px;
-            }
-
-            .button-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .btn {
-                text-align: center;
-            }
-
-            .graded-task {
-                padding-right: 15px;
-            }
-
-            .graded-badge {
-                position: static;
-                transform: none;
-                display: block;
-                margin-top: 8px;
-                width: fit-content;
-            }
-        }
-    </style>
 </head>
-<body>
+<body class="course-page">
 <div class="container">
     <div class="header">
         <a href="index.html" class="back-link">
@@ -369,54 +73,54 @@
         course.modules.forEach(module => {
             const moduleDiv = document.createElement('div');
             moduleDiv.className = 'module';
-            
+
             const moduleHeader = document.createElement('div');
             moduleHeader.className = 'module-header';
             moduleHeader.innerHTML = `
                 <i class="fa ${module.icon}"></i> ${module.id}. ${module.title}
             `;
-            
+
             const moduleContent = document.createElement('div');
             moduleContent.className = 'module-content';
-            
+
             const taskList = document.createElement('ul');
             taskList.className = 'task-list';
-            
+
             module.tasks.forEach(task => {
                 const li = document.createElement('li');
                 if (task.graded) li.classList.add('graded-task');
                 if (task.indent) li.classList.add('indent');
-                
+
                 let taskHTML = task.text;
-                
+
                 // Single link
                 if (task.link) {
-                    const linkClass = task.linkType === 'youtube' ? 'youtube-link' : 
-                                     task.linkType === 'drive' ? 'drive-link' : 'task-link';
+                    const linkClass = task.linkType === 'youtube' ? 'youtube-link' :
+                        task.linkType === 'drive' ? 'drive-link' : 'task-link';
                     taskHTML = `<a href="${task.link}" class="${linkClass}" target="_blank">${task.text}</a>`;
                 }
-                
+
                 // Multiple links
                 if (task.links) {
                     task.links.forEach(link => {
-                        const linkClass = link.type === 'youtube' ? 'youtube-link' : 
-                                         link.type === 'drive' ? 'drive-link' : 'task-link';
+                        const linkClass = link.type === 'youtube' ? 'youtube-link' :
+                            link.type === 'drive' ? 'drive-link' : 'task-link';
                         taskHTML += ` <a href="${link.url}" class="${linkClass}" target="_blank">${link.text}</a>`;
                     });
                 }
-                
+
                 li.innerHTML = taskHTML;
-                
+
                 if (task.graded) {
                     const badge = document.createElement('span');
                     badge.className = 'graded-badge';
                     badge.textContent = 'HINDELINE';
                     li.appendChild(badge);
                 }
-                
+
                 taskList.appendChild(li);
             });
-            
+
             moduleContent.appendChild(taskList);
             moduleDiv.appendChild(moduleHeader);
             moduleDiv.appendChild(moduleContent);
@@ -429,9 +133,9 @@
     function renderQuickLinks(course) {
         const quickLinks = document.getElementById('quick-links');
         const buttonGroup = document.getElementById('button-group');
-        
+
         buttonGroup.innerHTML = '';
-        
+
         if (course.youtubeChannel) {
             buttonGroup.innerHTML += `
                 <a href="${course.youtubeChannel}" class="btn btn-youtube" target="_blank">
@@ -439,7 +143,7 @@
                 </a>
             `;
         }
-        
+
         if (course.driveFolder) {
             buttonGroup.innerHTML += `
                 <a href="${course.driveFolder}" class="btn btn-drive" target="_blank">
@@ -447,13 +151,13 @@
                 </a>
             `;
         }
-        
+
         buttonGroup.innerHTML += `
             <a href="index.html" class="btn btn-back">
                 <i class="fa fa-home"></i> Tagasi avalehele
             </a>
         `;
-        
+
         quickLinks.style.display = 'block';
     }
 

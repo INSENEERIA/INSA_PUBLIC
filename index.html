@@ -4,808 +4,380 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSA - Inseneeria Valikkursused</title>
+    <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Reset and Base Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        .main-title {
-            text-align: center;
-            color: #333;
-            margin-bottom: 40px;
-            font-size: 2.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        /* Sponsor Section */
-        .sponsor-section {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-            overflow: hidden;
-        }
-
-        .sponsor-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .sponsor-logo {
-            flex: 0 0 auto;
-        }
-
-        .sponsor-logo img {
-            height: 60px;
-            object-fit: contain;
-        }
-
-        .sponsor-text {
-            flex: 1;
-            text-align: center;
-            font-weight: bold;
-            color: #666;
-            font-size: 16px;
-        }
-
-        /* Grid Layout */
-        .grid {
-            display: grid;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
-        .grid-2 {
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        }
-
-        /* Card Styles */
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 14px;
-        }
-
-        .card-body {
-            padding: 25px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .card-text {
-            color: #666;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            flex: 1;
-        }
-
-        .card-link {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            text-align: center;
-            transition: all 0.3s ease;
-            margin-top: auto;
-        }
-
-        .card-link:hover {
-            background: #1a73e8;
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Profile Card Specific Styles */
-        .profile-card .card-body {
-            text-align: center;
-        }
-
-        .profile-title {
-            color: #999;
-            font-size: 16px;
-            margin: 10px 0 5px 0;
-        }
-
-        .profile-company {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .social-icons a {
-            color: #666;
-            font-size: 24px;
-            transition: all 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #1a73e8;
-            transform: scale(1.2);
-        }
-
-        /* Calendar Section */
-        .calendar-container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            overflow: hidden;
-            margin: 40px 0;
-        }
-
-        .calendar-header {
-            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .calendar-logo {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-
-        .calendar-subtitle {
-            font-size: 16px;
-            opacity: 0.9;
-            margin-bottom: 25px;
-        }
-
-        .calendar-controls {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .control-button {
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            min-width: 80px;
-        }
-
-        .control-button:hover,
-        .control-button.active {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-
-        .calendar-embed {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .calendar-embed iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .loading-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255,255,255,0.95);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-        }
-
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #1a73e8;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .quick-actions {
-            background: #f8f9fa;
-            padding: 20px;
-        }
-
-        .actions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-
-        .action-button {
-            background: white;
-            border: 1px solid #dadce0;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #3c4043;
-            font-size: 14px;
-        }
-
-        .action-button:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transform: translateY(-3px);
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        .action-icon {
-            font-size: 20px;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .calendar-footer {
-            background: #f8f9fa;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .footer-link {
-            color: #5f6368;
-            text-decoration: none;
-            font-size: 14px;
-            padding: 8px 15px;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .footer-link:hover {
-            background: #e8f0fe;
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        .sync-indicator {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #5f6368;
-        }
-
-        .sync-dot {
-            width: 10px;
-            height: 10px;
-            background: #34a853;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
-            .main-title {
-                font-size: 2em;
-                margin-bottom: 30px;
-            }
-
-            .sponsor-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .sponsor-logo img {
-                height: 40px;
-            }
-
-            .sponsor-text {
-                font-size: 14px;
-            }
-
-            .card-body {
-                padding: 20px;
-            }
-
-            .calendar-header {
-                padding: 20px 15px;
-            }
-
-            .calendar-logo {
-                font-size: 24px;
-            }
-
-            .calendar-subtitle {
-                font-size: 14px;
-            }
-
-            .control-button {
-                padding: 10px 15px;
-                font-size: 12px;
-                min-width: 70px;
-            }
-
-            .calendar-footer {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .actions-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Main Title -->
-        <h1 class="main-title">Inseneeria Valikkursused</h1>
+<div class="container">
+    <!-- Main Title -->
+    <h1 class="main-title">Inseneeria Valikkursused</h1>
 
-        <!-- Sponsor Section -->
-        <div class="sponsor-section">
-            <div class="sponsor-content">
-                <div class="sponsor-logo">
-               <img src="assets/INSA.png" alt="INSA Logo">
-
-
-                  </div>
-                <div class="sponsor-text">
-                    PROJEKT ON TOETATUD INSENERIAKADEEMIA MATIK KOOLIDE PROJEKTIST
-                </div>
-                <div class="sponsor-logo">
-                    <img src="assets/EU_KAKSIKLOGO.png" alt="EU Logo">
-                </div>
+    <!-- Sponsor Section -->
+    <div class="sponsor-section">
+        <div class="sponsor-content">
+            <div class="sponsor-logo">
+                <img src="assets/INSA.png" alt="INSA Logo">
             </div>
-        </div>
-
-        <!-- Course Cards -->
-        <div class="grid grid-3">
-            <div class="card">
-<div class="card-image"><img src="assets/tart.png" alt="tart Logo"></div>
-                
-                
-                <div class="card-body">
-                    <h5 class="card-title">Tark Tööstus</h5>
-                    <p class="card-text">
-                        Moodul ühendab infotehnoloogia, mehaanika, elektroonika ja inseneeria maailmad üheks põnevaks tervikuks! 
-                        Nende valdkondade lõimimine on muutunud tänapäeval üha olulisemaks. Heaks näiteks on erinevad robotid. 
-                        Mehhatroonika ja inseneeria kursuste käigus saad teadmisi mehaanikast, elektroonikast, programmeerimisest, 
-                        automatiseerimisest, kontrollisüsteemidest ning projekteerimise ja disaini põhimõtetest.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link" class="card-link">Esitlus</a>
-                    <h5 class="card-title">Kursused:</h5>
-                    <a href="course.html?id=inseneeria-tootmine" class="card-link">Inseneeria ja tootmine</a>
-                    <a href="course.html?id=mehhatroonika1" class="card-link">Mehhatroonika 1</a>
-                    <a href="course.html?id=tark-maja" class="card-link">Targa maja lihtsad lahendused</a>
-                </div>
+            <div class="sponsor-text">
+                PROJEKT ON TOETATUD INSENERIAKADEEMIA MATIK KOOLIDE PROJEKTIST
             </div>
-
-            <div class="card">
-                <div class="card-image"><img src="assets/ands.png" alt="ands Logo"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Andmekogur-sateliit</h5>
-                    <p class="card-text">
-                        Moodul CanSat satelliit koosneb kolmest praktilisest kursusest, mille eesmärk on arendada inseneriteadmisi 
-                        ja tehnilisi oskusi CanSati satelliidi arendamise kontekstis. Mooduli käigus käsitletakse elektroonikat, 
-                        mehhaanilist disaini, aerodünaamikat ning satelliidi ehitamise ja võistlusteks ettevalmistamise protsessi.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link" class="card-link">Esitlus</a>
-                    <h5 class="card-title">Kursused:</h5>
-                    <a href="course.html?id=ands-inseneeria" class="card-link">Sissejuhatus inseneeriasse</a>
-                    <a href="course.html?id=ands-mehhatroonika" class="card-link">Sissejuhatus mehhatroonikasse</a>
-                    <a href="course.html?id=cansat" class="card-link">Cansat sateliit</a>
-                </div>
-
-            </div>
-            <div class="card">
-                <div class="card-image"><img src="assets/auts.png" alt="auts Logo"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Autonoomne sõiduk</h5>
-                    <p class="card-text">
-                        Moodul laiendab ja ühendab inseneeriat, mehhatroonikat ja IKT-d üldiselt ning annab sellele kõigele 
-                        interdistsiplinaarse praktilise väljundi. Moodul on inspireeritud TalTechi projektist „Iseauto", 
-                        mis on innovatiivne ja tänapäevasel käsitlusel ning praktilisel väljundil baseeruv projekt 
-                        inseneeria ja IKT valdkonnas.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1WC8b4NTviv8rPoZ0HE7mQlWkoC4wG5Qy/view?usp=share_link" class="card-link">Esitlus</a>
-                    <h5 class="card-title">Kursused:</h5>
-                    <a href="course.html?id=kdp" class="card-link">Kasutajakeskne disain ja prototüüpimine</a>
-                    <a href="course.html?id=mehhatroonika2" class="card-link">Mehhatroonika 2</a>
-                    <a href="course.html?id=folkrace" class="card-link">Võistlus</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image"><img src="assets/cads.png" alt="cads Logo"></div>
-                <div class="card-body">
-                    <h5 class="card-title">E-CADrina</h5>
-                    <p class="card-text">
-                        Siin saab lisada E-CADrina kursuse kirjelduse ja detailid. Kursus käsitleb arvutipõhist 
-                        projekteerimist ja disaini põhimõtteid.
-                    </p>
-                    <a href="" class="card-link">Esitlus</a>
-                    <h5 class="card-title">Kursused:</h5>
-                    <a href="course.html?id=cads1" class="card-link">E-CADrina</a>
-                    <a href="course.html?id=cads2" class="card-link">E-CADrina</a>
-                    <a href="course.html?id=cads3" class="card-link">CADrina võistlus</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image"><img src="assets/silt.png" alt="silt Logo"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Sillamäe Inseneeria</h5>
-                    <p class="card-text">
-                        Siin saab lisada Sillamäe inseneeria kursuse kirjelduse ja detailid. Praktiline lähenemisviis 
-                        inseneeria põhimõtetele.
-                    </p>
-                    <a href="" class="card-link">Esitlus</a>
-                    <h5 class="card-title">Kursused:</h5>
-                    <a href="course.html?id=silt1" class="card-link">Sillamäe inseneeria</a>
-                    <a href="course.html?id=silt2" class="card-link">Sillamäe tootmine</a>
-                    <a href="course.html?id=silt3" class="card-link">Sillamäe</a>
-                </div>
-            </div>
-        </div>
-
-         <h1 class="main-title">Inseneripedagoogika Mõttekoda</h1>
-
-        <!-- Team Section -->
-        <div class="grid grid-2">
-            <div class="card profile-card">
-                <div class="card-image"><img src="assets/LS.png" alt="LS"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Lauri Soosaar</h5>
-                    <p class="profile-title">STEM õpetaja ja insener</p>
-                    <p class="profile-company">MERKUUR Ltd</p>
-                    
-                    <div class="social-icons">
-                        <a href="https://laurisoosaar.wixsite.com/mysite" aria-label="Website">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@laurisoosaar" aria-label="YouTube">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a href="https://www.facebook.com/lauri.soosaar" aria-label="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="tel:+3725185404" aria-label="Telefon">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                    </div>
-                    
-                    <a href="mailto:laurisoosaar@gmail.com" class="card-link">
-                        Saada e-kiri
-                    </a>
-                </div>
-            </div>
-
-            <div class="card profile-card">
-                <div class="card-image"><img src="assets/RK.png" alt="RK"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Rasmus Kits</h5>
-                    <p class="profile-title">STEM õpetaja ja mehhatroonik</p>
-                    <p class="profile-company">FIE RASMUS KITS</p>
-                    
-                    <div class="social-icons">
-                        <a href="#" aria-label="Website">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#" aria-label="Telefon">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                    </div>
-                    
-                    <a href="#" class="card-link">
-                        Saada e-kiri
-                    </a>
-                </div>
-            </div>
-
-             <div class="card profile-card">
-                <div class="card-image"><img src="assets/img" alt="RK"></div>
-                <div class="card-body">
-                    <h5 class="card-title">TULE MEILE ÕPETAJAKS</h5>
-                    <p class="profile-title">STEM õpetaja</p>
-                    <p class="profile-company"></p>
-                    
-                    <div class="social-icons">
-                        <a href="#" aria-label="Website">
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#" aria-label="Telefon">
-                            <i class="fa fa-phone"></i>
-                        </a>
-                    </div>
-                    
-                    <a href="#" class="card-link">
-                        Saada e-kiri
-                    </a>
-                </div>
-            </div>
-             </div>
-
-        <!-- Calendar Section -->
-        <div class="calendar-container">
-            <div class="calendar-header">
-                <div class="calendar-logo">INSA Kalender</div>
-                <div class="calendar-subtitle">Inseneeria Valikkursuste Ajakava</div>
-                
-                <div class="calendar-controls">
-                    <button class="control-button active" onclick="switchView('month')">Kuu</button>
-                    <button class="control-button" onclick="switchView('week')">Nädal</button>
-                    <button class="control-button" onclick="switchView('agenda')">Nimekiri</button>
-                </div>
-            </div>
-
-            <div class="calendar-embed" id="calendarEmbed">
-                <div class="loading-overlay" id="loadingOverlay">
-                    <div class="loading-spinner"></div>
-                </div>
-                <iframe 
-                    id="calendarFrame"
-                    src="https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn&mode=MONTH&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff"
-                    frameborder="0" 
-                    scrolling="no"
-                    onload="hideLoading()"
-                    title="INSA Calendar">
-                </iframe>
-            </div>
-
-            <div class="quick-actions">
-                <div class="actions-grid">
-                    <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener" class="action-button">
-                        <span class="action-icon">+</span>
-                        Lisa sündmus
-                    </a>
-                    <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" class="action-button">
-                        <span class="action-icon">📅</span>
-                        Ava Google'is
-                    </a>
-                    <a href="#" onclick="shareCalendar(); return false;" class="action-button">
-                        <span class="action-icon">📤</span>
-                        Jaga kalendrit
-                    </a>
-                    <a href="#" onclick="syncCalendar(); return false;" class="action-button">
-                        <span class="action-icon">🔄</span>
-                        Sünkroniseeri
-                    </a>
-                </div>
-            </div>
-
-            <div class="calendar-footer">
-                <div class="footer-links">
-                    <a href="mailto:laurisoosaar@gmail.com" class="footer-link">Kontakt</a>
-                    <a href="tel:+3725185404" class="footer-link">+372 5185404</a>
-                    <a href="mailto:laurisoosaar@gmail.com" class="footer-link">laurisoosaar@gmail.com</a>
-                </div>
-                <div class="sync-indicator">
-                    <div class="sync-dot"></div>
-                    Reaalajas sünkroniseeritud
-                </div>
+            <div class="sponsor-logo">
+                <img src="assets/EU_KAKSIKLOGO.png" alt="EU Logo">
             </div>
         </div>
     </div>
 
-    <script>
-        function switchView(view) {
-            // Remove active class from all buttons
-            document.querySelectorAll('.control-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-            showLoading();
-            
-            const iframe = document.getElementById('calendarFrame');
-            const baseUrl = 'https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn';
-            
-            let viewMode;
-            switch(view) {
-                case 'week':
-                    viewMode = 'WEEK';
-                    break;
-                case 'agenda':
-                    viewMode = 'AGENDA';
-                    break;
-                default:
-                    viewMode = 'MONTH';
-            }
-            
-            const newSrc = `${baseUrl}&mode=${viewMode}&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff`;
-            
-            setTimeout(() => {
-                iframe.src = newSrc;
-            }, 300);
+    <!-- Course Cards -->
+    <div class="grid grid-3">
+        <div class="card">
+            <div class="card-image"><img src="assets/tart.png" alt="tart Logo"></div>
+            <div class="card-body">
+                <h5 class="card-title">Tark Tööstus</h5>
+                <p class="card-text">
+                    Moodul ühendab infotehnoloogia, mehaanika, elektroonika ja inseneeria maailmad üheks põnevaks tervikuks!
+                    Nende valdkondade lõimimine on muutunud tänapäeval üha olulisemaks. Heaks näiteks on erinevad robotid.
+                    Mehhatroonika ja inseneeria kursuste käigus saad teadmisi mehaanikast, elektroonikast, programmeerimisest,
+                    automatiseerimisest, kontrollisüsteemidest ning projekteerimise ja disaini põhimõtetest.
+                </p>
+                <a href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link" class="card-link">Esitlus</a>
+                <h5 class="card-title">Kursused:</h5>
+                <a href="course.html?id=inseneeria-tootmine" class="card-link">Inseneeria ja tootmine</a>
+                <a href="course.html?id=mehhatroonika1" class="card-link">Mehhatroonika 1</a>
+                <a href="course.html?id=tark-maja" class="card-link">Targa maja lihtsad lahendused</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image"><img src="assets/ands.png" alt="ands Logo"></div>
+            <div class="card-body">
+                <h5 class="card-title">Andmekogur-sateliit</h5>
+                <p class="card-text">
+                    Moodul CanSat satelliit koosneb kolmest praktilisest kursusest, mille eesmärk on arendada inseneriteadmisi
+                    ja tehnilisi oskusi CanSati satelliidi arendamise kontekstis. Mooduli käigus käsitletakse elektroonikat,
+                    mehaanilist disaini, aerodünaamikat ning satelliidi ehitamise ja võistlusteks ettevalmistamise protsessi.
+                </p>
+                <a href="https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view?usp=share_link" class="card-link">Esitlus</a>
+                <h5 class="card-title">Kursused:</h5>
+                <a href="course.html?id=ands-inseneeria" class="card-link">Sissejuhatus inseneeriasse</a>
+                <a href="course.html?id=ands-mehhatroonika" class="card-link">Sissejuhatus mehhatroonikasse</a>
+                <a href="course.html?id=cansat" class="card-link">Cansat sateliit</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image"><img src="assets/auts.png" alt="auts Logo"></div>
+            <div class="card-body">
+                <h5 class="card-title">Autonoomne sõiduk</h5>
+                <p class="card-text">
+                    Moodul laiendab ja ühendab inseneeriat, mehhatroonikat ja IKT-d üldiselt ning annab sellele kõigele
+                    interdistsiplinaarse praktilise väljundi. Moodul on inspireeritud TalTechi projektist „Iseauto",
+                    mis on innovatiivne ja tänapäevasel käsitlusel ning praktilisel väljundil baseeruv projekt
+                    inseneeria ja IKT valdkonnas.
+                </p>
+                <a href="https://drive.google.com/file/d/1WC8b4NTviv8rPoZ0HE7mQlWkoC4wG5Qy/view?usp=share_link" class="card-link">Esitlus</a>
+                <h5 class="card-title">Kursused:</h5>
+                <a href="course.html?id=kdp" class="card-link">Kasutajakeskne disain ja prototüüpimine</a>
+                <a href="course.html?id=mehhatroonika2" class="card-link">Mehhatroonika 2</a>
+                <a href="course.html?id=folkrace" class="card-link">Võistlus</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image"><img src="assets/cads.png" alt="cads Logo"></div>
+            <div class="card-body">
+                <h5 class="card-title">E-CADrina</h5>
+                <p class="card-text">
+                    Siin saab lisada E-CADrina kursuse kirjelduse ja detailid. Kursus käsitleb arvutipõhist
+                    projekteerimist ja disaini põhimõtteid.
+                </p>
+                <a href="" class="card-link">Esitlus</a>
+                <h5 class="card-title">Kursused:</h5>
+                <a href="course.html?id=cads1" class="card-link">E-CADrina</a>
+                <a href="course.html?id=cads2" class="card-link">E-CADrina</a>
+                <a href="course.html?id=cads3" class="card-link">CADrina võistlus</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image"><img src="assets/silt.png" alt="silt Logo"></div>
+            <div class="card-body">
+                <h5 class="card-title">Sillamäe Inseneeria</h5>
+                <p class="card-text">
+                    Siin saab lisada Sillamäe inseneeria kursuse kirjelduse ja detailid. Praktiline lähenemsviis
+                    inseneeria põhimõtetele.
+                </p>
+                <a href="" class="card-link">Esitlus</a>
+                <h5 class="card-title">Kursused:</h5>
+                <a href="course.html?id=silt1" class="card-link">Sillamäe inseneeria</a>
+                <a href="course.html?id=silt2" class="card-link">Sillamäe tootmine</a>
+                <a href="course.html?id=silt3" class="card-link">Sillamäe</a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="main-title">Inseneripedagoogika Mõttekoda</h1>
+
+    <!-- Team Section -->
+    <div class="grid grid-2">
+        <div class="card profile-card">
+            <div class="card-image"><img src="assets/LS.png" alt="LS"></div>
+            <div class="card-body">
+                <h5 class="card-title">Lauri Soosaar</h5>
+                <p class="profile-title">STEM õpetaja ja insener</p>
+                <p class="profile-company">MERKUUR Ltd</p>
+
+                <div class="social-icons">
+                    <a href="https://laurisoosaar.wixsite.com/mysite" aria-label="Website">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@laurisoosaar" aria-label="YouTube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="https://www.facebook.com/lauri.soosaar" aria-label="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="tel:+3725185404" aria-label="Telefon">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </div>
+
+                <a href="mailto:laurisoosaar@gmail.com" class="card-link">
+                    Saada e-kiri
+                </a>
+            </div>
+        </div>
+
+        <div class="card profile-card">
+            <div class="card-image"><img src="assets/RK.png" alt="RK"></div>
+            <div class="card-body">
+                <h5 class="card-title">Rasmus Kits</h5>
+                <p class="profile-title">STEM õpetaja ja mehhatroonik</p>
+                <p class="profile-company">FIE RASMUS KITS</p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Website">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Telefon">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </div>
+
+                <a href="#" class="card-link">
+                    Saada e-kiri
+                </a>
+            </div>
+        </div>
+
+        <div class="card profile-card">
+            <div class="card-image"><img src="assets/img" alt="RK"></div>
+            <div class="card-body">
+                <h5 class="card-title">TULE MEILE ÕPETAJAKS</h5>
+                <p class="profile-title">STEM õpetaja</p>
+                <p class="profile-company"></p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Website">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Telefon">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </div>
+
+                <a href="#" class="card-link">
+                    Saada e-kiri
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendar Section -->
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <div class="calendar-logo">INSA Kalender</div>
+            <div class="calendar-subtitle">Inseneeria Valikkursuste Ajakava</div>
+
+            <div class="calendar-controls">
+                <button class="control-button active" onclick="switchView('month')">Kuu</button>
+                <button class="control-button" onclick="switchView('week')">Nädal</button>
+                <button class="control-button" onclick="switchView('agenda')">Nimekiri</button>
+            </div>
+        </div>
+
+        <div class="calendar-embed" id="calendarEmbed">
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="loading-spinner"></div>
+            </div>
+            <iframe
+                    id="calendarFrame"
+                    src="https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn&mode=MONTH&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff"
+                    frameborder="0"
+                    scrolling="no"
+                    onload="hideLoading()"
+                    title="INSA Calendar">
+            </iframe>
+        </div>
+
+        <div class="quick-actions">
+            <div class="actions-grid">
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener" class="action-button">
+                    <span class="action-icon">+</span>
+                    Lisa sündmus
+                </a>
+                <a href="https://calendar.google.com/calendar" target="_blank" rel="noopener" class="action-button">
+                    <span class="action-icon">📅</span>
+                    Ava Google'is
+                </a>
+                <a href="#" onclick="shareCalendar(); return false;" class="action-button">
+                    <span class="action-icon">📤</span>
+                    Jaga kalendrit
+                </a>
+                <a href="#" onclick="syncCalendar(); return false;" class="action-button">
+                    <span class="action-icon">🔄</span>
+                    Sünkroniseeri
+                </a>
+            </div>
+        </div>
+
+        <div class="calendar-footer">
+            <div class="footer-links">
+                <a href="mailto:laurisoosaar@gmail.com" class="footer-link">Kontakt</a>
+                <a href="tel:+3725185404" class="footer-link">+372 5185404</a>
+                <a href="mailto:laurisoosaar@gmail.com" class="footer-link">laurisoosaar@gmail.com</a>
+            </div>
+            <div class="sync-indicator">
+                <div class="sync-dot"></div>
+                Reaalajas sünkroniseeritud
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchView(view) {
+        // Remove active class from all buttons
+        document.querySelectorAll('.control-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Add active class to clicked button
+        event.target.classList.add('active');
+        showLoading();
+
+        const iframe = document.getElementById('calendarFrame');
+        const baseUrl = 'https://calendar.google.com/calendar/embed?src=e71bf0994a30d885f7245ed76c8b8e6d674316e052a46c15430aee8fd1c83049@group.calendar.google.com&ctz=Europe%2FTallinn';
+
+        let viewMode;
+        switch(view) {
+            case 'week':
+                viewMode = 'WEEK';
+                break;
+            case 'agenda':
+                viewMode = 'AGENDA';
+                break;
+            default:
+                viewMode = 'MONTH';
         }
 
-        function showLoading() {
+        const newSrc = `${baseUrl}&mode=${viewMode}&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=1&showTitle=0&bgcolor=%23ffffff`;
+
+        setTimeout(() => {
+            iframe.src = newSrc;
+        }, 300);
+    }
+
+    function showLoading() {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay) {
+            overlay.style.display = 'flex';
+        }
+    }
+
+    function hideLoading() {
+        setTimeout(() => {
             const overlay = document.getElementById('loadingOverlay');
             if (overlay) {
-                overlay.style.display = 'flex';
+                overlay.style.display = 'none';
             }
-        }
+        }, 1000);
+    }
 
-        function hideLoading() {
-            setTimeout(() => {
-                const overlay = document.getElementById('loadingOverlay');
-                if (overlay) {
-                    overlay.style.display = 'none';
-                }
-            }, 1000);
-        }
+    function shareCalendar() {
+        const shareUrl = window.location.href;
 
-        function shareCalendar() {
-            const shareUrl = window.location.href;
-            
-            if (navigator.share) {
-                navigator.share({
-                    title: 'INSA Kalender',
-                    text: 'Vaata INSA kursuste ajakava',
-                    url: shareUrl
-                }).catch(err => console.log('Error sharing:', err));
-            } else {
-                // Fallback for browsers that don't support Web Share API
-                if (navigator.clipboard) {
-                    navigator.clipboard.writeText(shareUrl).then(() => {
-                        alert('Kalendri link kopeeritud lõikelauale!');
-                    }).catch(err => {
-                        console.log('Error copying to clipboard:', err);
-                        // Fallback to prompt
-                        prompt('Kopeeri see link:', shareUrl);
-                    });
-                } else {
+        if (navigator.share) {
+            navigator.share({
+                title: 'INSA Kalender',
+                text: 'Vaata INSA kursuste ajakava',
+                url: shareUrl
+            }).catch(err => console.log('Error sharing:', err));
+        } else {
+            // Fallback for browsers that don't support Web Share API
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareUrl).then(() => {
+                    alert('Kalendri link kopeeritud lõikelauale!');
+                }).catch(err => {
+                    console.log('Error copying to clipboard:', err);
+                    // Fallback to prompt
                     prompt('Kopeeri see link:', shareUrl);
-                }
+                });
+            } else {
+                prompt('Kopeeri see link:', shareUrl);
             }
         }
+    }
 
-        function syncCalendar() {
-            showLoading();
-            
-            setTimeout(() => {
-                const iframe = document.getElementById('calendarFrame');
-                iframe.src = iframe.src;
-                hideLoading();
-                
-                // Animate sync indicator
-                const syncDot = document.querySelector('.sync-dot');
-                if (syncDot) {
-                    syncDot.style.background = '#34a853';
-                    syncDot.style.animation = 'pulse 0.5s ease-in-out 3';
-                    
-                    setTimeout(() => {
-                        syncDot.style.animation = 'pulse 2s infinite';
-                    }, 1500);
-                }
-            }, 1500);
-        }
+    function syncCalendar() {
+        showLoading();
 
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hide loading overlay after initial load
-            setTimeout(hideLoading, 2000);
-            
-            // Add hover effect to calendar container
-            const container = document.querySelector('.calendar-container');
-            if (container) {
-                container.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                
-                container.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+        setTimeout(() => {
+            const iframe = document.getElementById('calendarFrame');
+            iframe.src = iframe.src;
+            hideLoading();
+
+            // Animate sync indicator
+            const syncDot = document.querySelector('.sync-dot');
+            if (syncDot) {
+                syncDot.style.background = '#34a853';
+                syncDot.style.animation = 'pulse 0.5s ease-in-out 3';
+
+                setTimeout(() => {
+                    syncDot.style.animation = 'pulse 2s infinite';
+                }, 1500);
             }
-        });
-    </script>
+        }, 1500);
+    }
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide loading overlay after initial load
+        setTimeout(hideLoading, 2000);
+
+        // Add hover effect to calendar container
+        const container = document.querySelector('.calendar-container');
+        if (container) {
+            container.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+
+            container.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        }
+    });
+</script>
 </body>
 </html>
