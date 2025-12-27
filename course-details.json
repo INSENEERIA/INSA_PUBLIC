@@ -1,0 +1,131 @@
+{
+  "inseneeria-tootmine": {
+    "title": "Inseneeria ja tootmine",
+    "overview": "See kursus tutvustab inseneeria ja tootmise põhiprintsiipe, kombineerides teoreetilisi teadmisi praktiliste oskustega. Õpilased saavad kogemusi tootmisprotsessides ja projekteerimises.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Algaja kuni keskmine",
+    "maxStudents": "20 õpilast",
+    "learningOutcomes": [
+      "Tootmisprotsesside põhimõtted",
+      "Inseneeria projekteerimise alused",
+      "CAD tarkvarade kasutamine",
+      "Materjalide valik ja töötlemine",
+      "Kvaliteedikontrolli meetodid",
+      "Probleemide lahendamine tootmises"
+    ],
+    "requiretools": [
+      "3D Printer",
+      "CNC lasergraveerija",
+      "Projektor",
+      "Tinkercad.com",
+      "Eelinstalleeritud tarkvara: Snapmaker Luban",
+      "Eelinstalleeritud tarkvara: Fusion360"
+
+    ],
+    "requirements": "Eelteadmised pole vajalikud, kuid huvi tehnika ja tootmise vastu on kasulik. Matemaatika ja füüsika baasoskused aitavad kursust paremini mõista.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
+  },
+  "mehhatroonika1": {
+    "title": "Mehhatroonika 1",
+    "overview": "See kursus tutvustab mehhatroonika põhiprintsiipe, kombineerides mehaanika, elektroonika ja programmeerimise teadmisi. Õpilased saavad praktilise kogemuse robotite projekteerimises ja ehitamises.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Algaja kuni keskmine",
+    "maxStudents": "20 õpilast",
+    "learningOutcomes": [
+      "Robotite mehhanismi projekteerimist",
+      "Andurite ja mootorite kasutamist",
+      "Programmeerimist Arduino ja Raspberry Pi platvormidel",
+      "3D modelleerimist ja printimist",
+      "Lihtsa robootika süsteemi loomist",
+      "Probleemide lahendamist inseneriteaduses"
+    ],
+    "requirements": "Eelteadmised pole vajalikud, kuid huvi tehnika ja programmeerimise vastu on kasulik. Matemaatika ja füüsika baasoskused aitavad kursust paremini mõista.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
+  },
+  "tark-maja": {
+    "title": "Targa maja lihtsad lahendused",
+    "overview": "Kursus tutvustab nutikate kodude ja hoonete tehnoloogiaid. Õpilased õpivad, kuidas luua ja programmeerida lihtsaid targa maja süsteeme.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Algaja",
+    "maxStudents": "20 õpilast",
+    "learningOutcomes": [
+      "IoT (Internet of Things) põhimõtted",
+      "Andurite integreerimine",
+      "Koduautomaatika süsteemid",
+      "Energiatõhususe lahendused",
+      "Turvalisuse süsteemid",
+      "Praktiliste projektide loomine"
+    ],
+    "requirements": "Eelteadmised pole vajalikud. Huvi tehnoloogia ja automatiseerimise vastu on kasulik.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": "https://drive.google.com/file/d/1Pashi2cp33K43z_eoZiqO9Y83oYcyWc7/view"
+  },
+  "ands-inseneeria": {
+    "title": "Sissejuhatus inseneeriasse",
+    "overview": "Kursus annab ülevaate inseneeria erinevatest valdkondadest ja tutvustab inseneriteaduse põhimõtteid.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Algaja",
+    "maxStudents": "25 õpilast",
+    "learningOutcomes": [
+      "Inseneeria põhimõtted",
+      "Projekteerimise tsükkel",
+      "Inseneeria valdkonnad",
+      "Meeskonnatöö oskused",
+      "Tehnilise dokumentatsiooni loomine",
+      "Esitlusoskused"
+    ],
+    "requirements": "Eelteadmised pole vajalikud. Kursus sobib kõigile, kes tahavad inseneeriaga tutvuda.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": null
+  },
+  "ands-mehhatroonika": {
+    "title": "Sissejuhatus mehhatroonikasse",
+    "overview": "Kursus tutvustab mehhatroonika põhimõtteid ja annab praktilise kogemuse lihtsate mehhatrooniliste süsteemide loomiseks.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Algaja",
+    "maxStudents": "20 õpilast",
+    "learningOutcomes": [
+      "Mehhatroonika alused",
+      "Elektrilised ahelad",
+      "Mikroprotsessorid",
+      "Andurid ja aktuaatorid",
+      "Lihtne programmeerimine",
+      "Projektitöö"
+    ],
+    "requirements": "Eelteadmised pole vajalikud, kuid huvi tehnoloogia vastu on kasulik.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": null
+  },
+  "cansat": {
+    "title": "CanSat sateliit",
+    "overview": "Kursus keskendub CanSat satelliidi projekteerimisele, ehitamisele ja testimisele. Õpilased võtavad osa võistlusest.",
+    "duration": "Kokkuleppel",
+    "hours": "35 tundi",
+    "level": "Keskmine kuni kõrgem",
+    "maxStudents": "16 õpilast",
+    "learningOutcomes": [
+      "Satelliidi disain",
+      "Elektroonika integreerimine",
+      "Andmete kogumine ja analüüs",
+      "Meeskonnatöö",
+      "Projekti juhtimine",
+      "Võistluseks ettevalmistamine"
+    ],
+    "requirements": "Soovitatav on eelnev kogemus elektroonika ja programmeerimisega. Kursus nõuab pühendumist ja meeskonnatööd.",
+    "registration": "Kursusele registreerumiseks võta ühendust kooliga või täida registreerumisankeet veebilehel.",
+    "contactEmail": "laurisoosaar@gmail.com",
+    "materialLink": null
+  }
+}
