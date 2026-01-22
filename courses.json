@@ -275,9 +275,20 @@
       {
         "id": 10,
         "icon": "fa-check-circle",
-        "title": "Võlgnevuste likvideerimine",
+        "title": "Kokkuvõte",
         "tasks": [
-          {
+           {
+            "text": "Enesekontroll",
+           "link": "https://drive.google.com/file/d/1hl2gw122OiFGm0HsHkR8wOZpiW5ceY0K/view?usp=sharing",
+            "linkType": "drive",
+            "graded": true
+          },
+{
+            "text": "Minu inseneriportfoolio google sites'i"
+          
+          },
+         
+         {
             "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
           }
         ]
@@ -392,6 +403,27 @@
             "text": "Lehtmetallist painutatud kronstein",
             "link": "https://youtu.be/qmVbZvd45tM?si=cMPSKNN20sFWj5c8",
             "linkType": "youtube"
+          }
+        ]
+      },
+          {
+        "id": 10,
+        "icon": "fa-check-circle",
+        "title": "Kokkuvõte",
+        "tasks": [
+           {
+            "text": "Enesekontroll",
+           "link": "https://drive.google.com/file/d/1hl2gw122OiFGm0HsHkR8wOZpiW5ceY0K/view?usp=sharing",
+            "linkType": "drive",
+            "graded": true
+          },
+{
+            "text": "Minu inseneriportfoolio google sites'i"
+          
+          },
+         
+         {
+            "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
           }
         ]
       },
