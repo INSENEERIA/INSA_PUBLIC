@@ -431,9 +431,15 @@
       ]
     }
   ]
-}
+},
+
+"ands2": {
+  "title": "SISSEJUHATUS MEHHATROONIKASSE",
+  "subtitle": "Satelliittehnoloogia ja andmekogumine",
+  "youtubeChannel": "",
+  "driveFolder": "",
+  "modules": [
   
-   "ands2": {
      "title": "SISSEJUHATUS MEHHATROONIKASSE",
      "subtitle": "Satelliittehnoloogia ja andmekogumine",
      "youtubeChannel": "",
