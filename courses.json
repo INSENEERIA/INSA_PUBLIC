@@ -350,90 +350,89 @@
      ]
    },
 
-  "ands1": {
-    "title": "SISSEJUHATUS INSENEERIASSE",
-    "subtitle": "Satelliittehnoloogia ja andmekogumine",
-    "youtubeChannel": "",
-    "driveFolder": "",
-    "modules": [
-      {
-        "id": 1,
-        "icon": "fa-rocket",
-        "title": "Sissejuhatus",
-        "tasks": [
-          {
-            "text": "Kursuse tutvustus"
-          },
-          {
-        "id": 6,
-        "icon": "fa-cogs",
-        "title": "CNC freesimise",
-        "tasks": [
-          {
-            "text": "Õpik lk 102...115",
-            "link": "https://drive.google.com/file/d/1W1Ne2KDYBQ_f0Rml0DhCiSXSQb6yAFiD/view?usp=share_link",
-            "linkType": "drive"
-          },
-          {
-            "text": "Fusion360 seadisamine (postprotsessor ja tööriistad)",
-           "link": "https://drive.google.com/drive/folders/1ZdtHJ75jfSDxrvwoYHxWOUglIRbzVrWM?usp=drive_link",
-           "linkType": "drive"
-          },
-          {
-            "text": "Lõikerajad ja tööriistad",
-            "link": "https://drive.google.com/file/d/1W1Ne2KDYBQ_f0Rml0DhCiSXSQb6yAFiD/view?usp=share_link",
-            "linkType": "drive"
-          },
-          {
-            "text": "Tutvustamine simulaatoriga"
-          },
-          {
-            "text": "Snapmaker seadmele 3D mudelist g-koodi genereerimine",
-            "link": "https://youtu.be/h3vMEiMTlio?si=tk-b8505TP5Tp5yc",
-            "linkType": "youtube"
-          }
-        ]
-      },
-           {
-        "id": 8,
-        "icon": "fa-industry",
-        "title": "Lehtmetall",
-        "tasks": [
-          {
-            "text": "Lehtmetallist painutatud kronstein",
-            "link": "https://youtu.be/qmVbZvd45tM?si=cMPSKNN20sFWj5c8",
-            "linkType": "youtube"
-          }
-        ]
-      },
-          {
-        "id": 10,
-        "icon": "fa-check-circle",
-        "title": "Kokkuvõte",
-        "tasks": [
-           {
-            "text": "Enesekontroll",
-           "link": "https://drive.google.com/file/d/1hl2gw122OiFGm0HsHkR8wOZpiW5ceY0K/view?usp=sharing",
-            "linkType": "drive",
-            "graded": true
-          },
-{
-            "text": "Minu inseneriportfoolio google sites'i"
-          
-          },
-         
-         {
-            "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
-          }
-        ]
-      },
-          {
-            "text": "Lisa oma sisu siia"
-          }
-        ]
-      }
-    ]
-  },
+"ands1": {
+  "title": "SISSEJUHATUS INSENEERIASSE",
+  "subtitle": "Satelliittehnoloogia ja andmekogumine",
+  "youtubeChannel": "",
+  "driveFolder": "",
+  "modules": [
+    {
+      "id": 1,
+      "icon": "fa-rocket",
+      "title": "Sissejuhatus",
+      "tasks": [
+        {
+          "text": "Kursuse tutvustus"
+        },
+        {
+          "text": "Lisa oma sisu siia"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "icon": "fa-cogs",
+      "title": "CNC freesimise",
+      "tasks": [
+        {
+          "text": "Õpik lk 102...115",
+          "link": "https://drive.google.com/file/d/1W1Ne2KDYBQ_f0Rml0DhCiSXSQb6yAFiD/view?usp=share_link",
+          "linkType": "drive"
+        },
+        {
+          "text": "Fusion360 seadisamine (postprotsessor ja tööriistad)",
+          "link": "https://drive.google.com/drive/folders/1ZdtHJ75jfSDxrvwoYHxWOUglIRbzVrWM?usp=drive_link",
+          "linkType": "drive"
+        },
+        {
+          "text": "Lõikerajad ja tööriistad",
+          "link": "https://drive.google.com/file/d/1W1Ne2KDYBQ_f0Rml0DhCiSXSQb6yAFiD/view?usp=share_link",
+          "linkType": "drive"
+        },
+        {
+          "text": "Tutvustamine simulaatoriga"
+        },
+        {
+          "text": "Snapmaker seadmele 3D mudelist g-koodi genereerimine",
+          "link": "https://youtu.be/h3vMEiMTlio?si=tk-b8505TP5Tp5yc",
+          "linkType": "youtube"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "icon": "fa-industry",
+      "title": "Lehtmetall",
+      "tasks": [
+        {
+          "text": "Lehtmetallist painutatud kronstein",
+          "link": "https://youtu.be/qmVbZvd45tM?si=cMPSKNN20sFWj5c8",
+          "linkType": "youtube"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "icon": "fa-check-circle",
+      "title": "Kokkuvõte",
+      "tasks": [
+        {
+          "text": "Enesekontroll",
+          "link": "https://drive.google.com/file/d/1hl2gw122OiFGm0HsHkR8wOZpiW5ceY0K/view?usp=sharing",
+          "linkType": "drive",
+          "graded": true
+        },
+        {
+          "text": "Minu inseneriportfoolio google sites'i"
+        },
+        {
+          "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
+        }
+      ]
+    }
+  ]
+}
+  
    "ands2": {
      "title": "SISSEJUHATUS MEHHATROONIKASSE",
      "subtitle": "Satelliittehnoloogia ja andmekogumine",
