@@ -1,5 +1,4 @@
- {
- 
+{ 
   "tart1": {
     "title": "INSENEERIA JA TOOTMINE",
     "subtitle": "Targa tööstuse lahendused ja automatiseerimine",
@@ -166,7 +165,7 @@
           {
             "text": "Tekst + piltkujutis (3 ripatsit)",
             "link": "https://youtu.be/3AXh0smKITQ?si=Cais8inOrxbT5K6J",
-            "linkType": "youtube"
+            "link": "youtube"
           },
           {
             "text": "DXF faili export ja G-koodi loomine CNC laserseadmele"
@@ -202,7 +201,7 @@
           {
             "text": "Fusion360 seadisamine (postprotsessor ja tööriistad)",
            "link": "https://drive.google.com/drive/folders/1ZdtHJ75jfSDxrvwoYHxWOUglIRbzVrWM?usp=drive_link",
-           "linkType": "drive"
+            "linkType": "drive"
           },
           {
             "text": "Lõikerajad ja tööriistad",
@@ -248,7 +247,7 @@
         "icon": "fa-industry",
         "title": "Lehtmetall",
         "tasks": [
-          {
+        {
             "text": "Lehtmetallist painutatud kronstein",
             "link": "https://youtu.be/qmVbZvd45tM?si=cMPSKNN20sFWj5c8",
             "linkType": "youtube"
@@ -263,7 +262,7 @@
           {
             "text": "Täringu koost",
            "link": "https://drive.google.com/file/d/147OLoxupHy0Wdd62zZVVr5OY0EuggIhJ/view?usp=share_link",
-            "linkType": "drive",
+            "link": "drive",
             "graded": true
           },
           {
@@ -285,9 +284,7 @@
           },
 {
             "text": "Minu inseneriportfoolio google sites'i"
-          
           },
-         
          {
             "text": "Vajadusel lasertöötlus ja 3D printimine mobiilses CNC õppeklassis"
           }
@@ -439,27 +436,23 @@
   "youtubeChannel": "",
   "driveFolder": "",
   "modules": [
-  
-     "title": "SISSEJUHATUS MEHHATROONIKASSE",
-     "subtitle": "Satelliittehnoloogia ja andmekogumine",
-     "youtubeChannel": "",
-     "driveFolder": "",
-     "modules": [
-       {
-         "id": 1,
-         "icon": "fa-rocket",
-         "title": "Sissejuhatus",
-         "tasks": [
-           {
-             "text": "Kursuse tutvustus"
-           },
-           {
-             "text": "Lisa oma sisu siia"
-           }
-         ]
-       }
-     ]
-   },"ands3": {
+    {
+      "id": 1,
+      "icon": "fa-rocket",
+      "title": "Sissejuhatus",
+      "tasks": [
+        {
+          "text": "Kursuse tutvustus"
+        },
+        {
+          "text": "Lisa oma sisu siia"
+        }
+      ]
+    }
+  ]
+},
+
+"ands3": {
    "title": "ANDMEKOGUR-SATELIIT",
    "subtitle": "Satelliittehnoloogia ja andmekogumine",
    "youtubeChannel": "",
@@ -533,13 +526,13 @@
          "icon": "fa-car",
          "title": "Sissejuhatus",
          "tasks": [
-           {
-             "text": "Kursuse tutvustus"
-           },
-           {
-             "text": "Lisa oma sisu siia"
-           }
-         ]
+         {
+            "text": "Kursuse tutvustus"
+          },
+          {
+            "text": "Lisa oma sisu siia"
+          }
+        ]
        }
      ]
    },
@@ -575,15 +568,15 @@
          "icon": "fa-microchip",
          "title": "Sissejuhatus",
          "tasks": [
-           {
-             "text": "Kursuse tutvustus"
-           },
-           {
-             "text": "Lisa oma sisu siia"
-           }
-         ]
-       }
-     ]
+         {
+            "text": "Kursuse tutvustus"
+          },
+          {
+            "text": "Lisa oma sisu siia"
+          }
+        ]
+      }
+    ]
    },
    "cads3": {
      "title": "E-CADRINA - VÕISTLUS",
