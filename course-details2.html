@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">INSA - Kursuse Detailid</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .back-nav {
+      padding: 16px 20px 0;
+      box-sizing: border-box;
+    }
+    .back-nav-bottom {
+      text-align: right;
+      padding: 40px 20px 30px;
+      box-sizing: border-box;
+    }
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .error-message {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Back link top -->
+  <div class="back-nav">
+    <a href="index.html" class="back-link">
+      <i class="fa fa-arrow-left"></i> Tagasi
+    </a>
+  </div>
+
+  <!-- Course content loaded by JS -->
+  <div id="course-content">
+    <div class="loading">
+      <i class="fa fa-spinner fa-spin"></i>
+      <p>Laeb kursuse sisu...</p>
+    </div>
+  </div>
+
+  <!-- Back link bottom -->
+  <div class="back-nav-bottom">
+    <a href="index.html" class="back-link">
+      <i class="fa fa-arrow-left"></i> Tagasi
+    </a>
+  </div>
+
+</div>
+
+<script>
+  const courseId = new URLSearchParams(window.location.search).get('id');
+
+  async function loadCourseDetails() {
+    try {
+      const response = await fetch('course-details.json');
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const courses = await response.json();
+      const course = courses[courseId];
+      if (!course) {
+        showError('Kursust ei leitud! Kontrollige URL-i parameetrit.');
+        return;
+      }
+      renderCourseDetails(course);
+    } catch (error) {
+      showError('Viga kursuse laadimisel: ' + error.message);
+    }
+  }
+
+  function showError(message) {
+    document.getElementById('course-content').innerHTML = `
+      <div class="error-message">
+        <strong><i class="fa fa-exclamation-triangle"></i> ${message}</strong>
+        <p style="margin-top:10px;">Tagasi <a href="index.html">avalehele</a></p>
+      </div>
+    `;
+  }
+
+  function renderCourseDetails(course) {
+    document.getElementById('page-title').textContent = `INSA - ${course.title}`;
+
+    const requireToolsHTML = Array.isArray(course.requiretools) && course.requiretools.length
+      ? `<div class="info-section">
+           <h3>Vajalikud õppevahendid:</h3>
+           <ul>${course.requiretools.map(item => `<li>${item}</li>`).join('')}</ul>
+         </div>`
+      : '';
+
+    const learningHTML = Array.isArray(course.learningOutcomes) && course.learningOutcomes.length
+      ? `<div class="info-section">
+           <h3>Mida õpid:</h3>
+           <ul>${course.learningOutcomes.map(item => `<li>${item}</li>`).join('')}</ul>
+         </div>`
+      : '';
+
+    const materialHTML = course.materialLink
+      ? `<a href="${course.materialLink}" class="button" target="_blank" rel="noopener">
+           <i class="fa fa-download"></i> Laadi kursuse materjal
+         </a>`
+      : '';
+
+    document.getElementById('course-content').innerHTML = `
+      <div class="page-header">
+        <h1>${course.title}</h1>
+      </div>
+
+      <div class="info-section">
+        <p>${course.overview}</p>
+      </div>
+
+      <div class="course-details">
+        <h3>Kursuse üksikasjad</h3>
+        <ul>
+          <li><strong>Kestus:</strong> ${course.duration}</li>
+          <li><strong>Tundide arv:</strong> ${course.hours}</li>
+          <li><strong>Tase:</strong> ${course.level}</li>
+          <li><strong>Maksimaalne osalejate arv:</strong> ${course.maxStudents}</li>
+        </ul>
+      </div>
+
+      ${requireToolsHTML}
+      ${learningHTML}
+
+      <div class="info-section">
+        <h3>Eeldused:</h3>
+        <p>${course.requirements}</p>
+      </div>
+
+      <div class="info-section">
+        <h3>Registreerimine:</h3>
+        <p>${course.registration}</p>
+        <a href="mailto:${course.contactEmail}" class="button">
+          <i class="fa fa-envelope"></i> Võta ühendust
+        </a>
+        ${materialHTML}
+      </div>
+    `;
+  }
+
+  loadCourseDetails();
+</script>
+</body>
+</html>
