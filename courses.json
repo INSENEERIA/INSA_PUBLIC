@@ -67,7 +67,6 @@
           {
             "text": "Riidepuu",
             "links": [
-              {"url": "https://drive.google.com/file/d/1yHFV5LP35o2iPiLqb1zF3JC-CtiFQJby/view?usp=drive_link", "text": "Riidepuu", "type": "drive"}
               {"url": "https://youtu.be/ThDHG1ALMv8?si=dAYPjsotndasIbnS", "text": "Video 1", "type": "youtube"},
               {"url": "https://youtu.be/5YmxV70UtuQ?si=UMgc8bkDek4CD7Es", "text": "Video 2", "type": "youtube"}
             ],
@@ -416,7 +415,6 @@
           {
             "text": "Riidepuu",
             "links": [
-              {"url": "https://drive.google.com/file/d/1yHFV5LP35o2iPiLqb1zF3JC-CtiFQJby/view?usp=drive_link", "text": "Riidepuu", "type": "drive"}
               {"url": "https://youtu.be/ThDHG1ALMv8?si=dAYPjsotndasIbnS", "text": "Video 1", "type": "youtube"},
               {"url": "https://youtu.be/5YmxV70UtuQ?si=UMgc8bkDek4CD7Es", "text": "Video 2", "type": "youtube"}
             ],
